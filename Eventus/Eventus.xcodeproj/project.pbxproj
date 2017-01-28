@@ -10,6 +10,13 @@
 		743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */; };
 		743BD07F1E3BC9BA009CAEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07E1E3BC9BA009CAEAF /* ViewController.swift */; };
 		743BD0841E3BC9BA009CAEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BD0831E3BC9BA009CAEAF /* Assets.xcassets */; };
+		74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */; };
+		74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */; };
+		74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */; };
+		74C203ED1E3BE44100BC6D8D /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EC1E3BE44100BC6D8D /* UIStackViewExtensions.swift */; };
+		74C203EF1E3BE46B00BC6D8D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */; };
+		74C203F21E3BE5D200BC6D8D /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */; };
+		74C203F41E3BE60A00BC6D8D /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +25,13 @@
 		743BD07E1E3BC9BA009CAEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		743BD0831E3BC9BA009CAEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743BD0881E3BC9BA009CAEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
+		74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
+		74C203EC1E3BE44100BC6D8D /* UIStackViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtensions.swift; sourceTree = "<group>"; };
+		74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSeparator.swift; sourceTree = "<group>"; };
+		74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSeparator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +64,51 @@
 		743BD07B1E3BC9BA009CAEAF /* Eventus */ = {
 			isa = PBXGroup;
 			children = (
+				74C203E01E3BDD7000BC6D8D /* Extensions */,
+				74C203DF1E3BDD6B00BC6D8D /* Views */,
+				74C203DE1E3BDD6200BC6D8D /* View Controllers */,
 				743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */,
 				743BD07E1E3BC9BA009CAEAF /* ViewController.swift */,
 				743BD0831E3BC9BA009CAEAF /* Assets.xcassets */,
 				743BD0881E3BC9BA009CAEAF /* Info.plist */,
 			);
 			path = Eventus;
+			sourceTree = "<group>";
+		};
+		74C203DE1E3BDD6200BC6D8D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		74C203DF1E3BDD6B00BC6D8D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74C203F01E3BE5BF00BC6D8D /* UIViews */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		74C203E01E3BDD7000BC6D8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */,
+				74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */,
+				74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */,
+				74C203EC1E3BE44100BC6D8D /* UIStackViewExtensions.swift */,
+				74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		74C203F01E3BE5BF00BC6D8D /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */,
+				74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */,
+			);
+			name = UIViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */,
+				74C203EF1E3BE46B00BC6D8D /* UIViewExtensions.swift in Sources */,
+				74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */,
+				74C203F41E3BE60A00BC6D8D /* VerticalSeparator.swift in Sources */,
 				743BD07F1E3BC9BA009CAEAF /* ViewController.swift in Sources */,
 				743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */,
+				74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */,
+				74C203ED1E3BE44100BC6D8D /* UIStackViewExtensions.swift in Sources */,
+				74C203F21E3BE5D200BC6D8D /* HorizontalSeparator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +335,7 @@
 				743BD08D1E3BC9BA009CAEAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

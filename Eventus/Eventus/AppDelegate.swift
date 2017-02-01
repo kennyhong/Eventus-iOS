@@ -16,10 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		guard let window = window else { return false }
-		let viewController = ViewController()
-		window.rootViewController = viewController
+		let splashViewController = SplashViewController()
+		window.rootViewController = splashViewController
 		window.backgroundColor = .white
 		window.makeKeyAndVisible()
+		
+		UITextField.appearance().tintColor = .eventusGreen
+		UITextView.appearance().tintColor = .eventusGreen
+		UINavigationBar.appearance().tintColor = .eventusGreen
 		return true
 	}
 }

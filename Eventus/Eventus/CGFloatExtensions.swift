@@ -20,7 +20,7 @@ public extension CGFloat {
 	static let verySmallFont: CGFloat = 11
 	
 	// MARK: Spacing
-	// - reflect these constants in UIEdgeInsetExtensions
+	// reflect these spacing constants in UIEdgeInsetExtensions
 	
 	static let doubleExtraLarge: CGFloat = 48
 	static let extraLarge: CGFloat = 24
@@ -31,6 +31,8 @@ public extension CGFloat {
 	
 	// MARK: Misc Constants
 	
+	static let screenHeight: CGFloat = UIScreen.main.bounds.height
+	static let screenWidth: CGFloat = UIScreen.main.bounds.width
 	static let borderWidth: CGFloat = 1.0 / UIScreen.main.scale
 	static let one: CGFloat = 1
 	static let zero: CGFloat = 0

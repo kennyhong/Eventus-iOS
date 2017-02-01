@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */; };
-		743BD07F1E3BC9BA009CAEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07E1E3BC9BA009CAEAF /* ViewController.swift */; };
 		743BD0841E3BC9BA009CAEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BD0831E3BC9BA009CAEAF /* Assets.xcassets */; };
 		74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */; };
 		74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */; };
@@ -17,12 +16,20 @@
 		74C203EF1E3BE46B00BC6D8D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */; };
 		74C203F21E3BE5D200BC6D8D /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */; };
 		74C203F41E3BE60A00BC6D8D /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */; };
+		74C203F61E3FD5BA00BC6D8D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */; };
+		74C203F91E3FD6D700BC6D8D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */; };
+		74C203FB1E4260C000BC6D8D /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FA1E4260C000BC6D8D /* EventListViewController.swift */; };
+		74C203FD1E42632100BC6D8D /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FC1E42632100BC6D8D /* UILabelExtensions.swift */; };
+		74C204001E4264D500BC6D8D /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FF1E4264D500BC6D8D /* TextField.swift */; };
+		74C204021E42658800BC6D8D /* TextFieldWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */; };
+		74C204051E4265C000BC6D8D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204041E4265C000BC6D8D /* Button.swift */; };
+		74C204071E426A5300BC6D8D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */; };
+		74C2040A1E42804A00BC6D8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204091E42804A00BC6D8D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		743BD0791E3BC9BA009CAEAF /* Eventus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		743BD07E1E3BC9BA009CAEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		743BD0831E3BC9BA009CAEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743BD0881E3BC9BA009CAEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
@@ -32,6 +39,15 @@
 		74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalSeparator.swift; sourceTree = "<group>"; };
 		74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSeparator.swift; sourceTree = "<group>"; };
+		74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		74C203FA1E4260C000BC6D8D /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		74C203FC1E42632100BC6D8D /* UILabelExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
+		74C203FF1E4264D500BC6D8D /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithButtonView.swift; sourceTree = "<group>"; };
+		74C204041E4265C000BC6D8D /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		74C204091E42804A00BC6D8D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +80,11 @@
 		743BD07B1E3BC9BA009CAEAF /* Eventus */ = {
 			isa = PBXGroup;
 			children = (
+				74C204081E42803F00BC6D8D /* Models */,
 				74C203E01E3BDD7000BC6D8D /* Extensions */,
 				74C203DF1E3BDD6B00BC6D8D /* Views */,
 				74C203DE1E3BDD6200BC6D8D /* View Controllers */,
 				743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */,
-				743BD07E1E3BC9BA009CAEAF /* ViewController.swift */,
 				743BD0831E3BC9BA009CAEAF /* Assets.xcassets */,
 				743BD0881E3BC9BA009CAEAF /* Info.plist */,
 			);
@@ -78,6 +94,9 @@
 		74C203DE1E3BDD6200BC6D8D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */,
+				74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */,
+				74C203FA1E4260C000BC6D8D /* EventListViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -85,6 +104,8 @@
 		74C203DF1E3BDD6B00BC6D8D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				74C204031E4265B500BC6D8D /* UIButtons */,
+				74C203FE1E4264B400BC6D8D /* UITextFields */,
 				74C203F01E3BE5BF00BC6D8D /* UIViews */,
 			);
 			name = Views;
@@ -98,6 +119,8 @@
 				74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */,
 				74C203EC1E3BE44100BC6D8D /* UIStackViewExtensions.swift */,
 				74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */,
+				74C203FC1E42632100BC6D8D /* UILabelExtensions.swift */,
+				74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -107,8 +130,33 @@
 			children = (
 				74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */,
 				74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */,
+				74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */,
 			);
 			name = UIViews;
+			sourceTree = "<group>";
+		};
+		74C203FE1E4264B400BC6D8D /* UITextFields */ = {
+			isa = PBXGroup;
+			children = (
+				74C203FF1E4264D500BC6D8D /* TextField.swift */,
+			);
+			name = UITextFields;
+			sourceTree = "<group>";
+		};
+		74C204031E4265B500BC6D8D /* UIButtons */ = {
+			isa = PBXGroup;
+			children = (
+				74C204041E4265C000BC6D8D /* Button.swift */,
+			);
+			name = UIButtons;
+			sourceTree = "<group>";
+		};
+		74C204081E42803F00BC6D8D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74C204091E42804A00BC6D8D /* User.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,15 +230,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74C204071E426A5300BC6D8D /* UIViewControllerExtensions.swift in Sources */,
 				74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */,
 				74C203EF1E3BE46B00BC6D8D /* UIViewExtensions.swift in Sources */,
 				74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */,
 				74C203F41E3BE60A00BC6D8D /* VerticalSeparator.swift in Sources */,
-				743BD07F1E3BC9BA009CAEAF /* ViewController.swift in Sources */,
+				74C203FB1E4260C000BC6D8D /* EventListViewController.swift in Sources */,
+				74C204001E4264D500BC6D8D /* TextField.swift in Sources */,
+				74C2040A1E42804A00BC6D8D /* User.swift in Sources */,
 				743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */,
 				74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */,
+				74C204021E42658800BC6D8D /* TextFieldWithButtonView.swift in Sources */,
 				74C203ED1E3BE44100BC6D8D /* UIStackViewExtensions.swift in Sources */,
+				74C204051E4265C000BC6D8D /* Button.swift in Sources */,
+				74C203FD1E42632100BC6D8D /* UILabelExtensions.swift in Sources */,
+				74C203F61E3FD5BA00BC6D8D /* SplashViewController.swift in Sources */,
 				74C203F21E3BE5D200BC6D8D /* HorizontalSeparator.swift in Sources */,
+				74C203F91E3FD6D700BC6D8D /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

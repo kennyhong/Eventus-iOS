@@ -12,6 +12,8 @@ class EventListViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+//		TODO: remove placeholder testing label
 		let label = UILabel()
 		view.addSubviewForAutolayout(label)
 		label.text = "logged in as \(User.shared.username!)"

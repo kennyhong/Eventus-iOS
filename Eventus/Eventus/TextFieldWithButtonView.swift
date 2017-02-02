@@ -93,9 +93,9 @@ class TextFieldWithButtonView: UIView {
 extension TextFieldWithButtonView: UITextFieldDelegate {
 	
 	func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-		textField.resignFirstResponder()
 		if !textField.text!.isEmpty {
 			delegate?.didTriggerSubmit(withText: textField.text!)
+			textField.resignFirstResponder()
 		}
 		return true
 	}

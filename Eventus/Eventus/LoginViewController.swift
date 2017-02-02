@@ -45,10 +45,10 @@ class LoginViewController: UIViewController {
 	
 	private func setupUsernameTextFieldWithButtonView() {
 		usernameTextFieldWithButtonView.delegate = self
-		view.addSubviewForAutolayout(usernameTextFieldWithButtonView)
 		usernameTextFieldWithButtonView.buttonBackgroundColor = .white
 		usernameTextFieldWithButtonView.buttonTitleColor = .eventusGreen
 		usernameTextFieldWithButtonView.textFieldPlaceholder = "Username"
+		view.addSubviewForAutolayout(usernameTextFieldWithButtonView)
 		usernameTextFieldWithButtonView.constrainToBeCenteredInViewVertically(view)
 		usernameTextFieldWithButtonView.constrainToFillViewHorizontally(view, withMargins: UIEdgeInsets(horizontal: .extraLarge))
 	}

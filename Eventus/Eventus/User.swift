@@ -30,8 +30,4 @@ class User {
 		username = UserDefaults.standard.value(forKey: "username") as? String
 		isLoggedIn = UserDefaults.standard.value(forKey: "isLoggedIn") as? Bool
 	}
-	
-	private init() {
-		
-	}
 }

@@ -25,6 +25,10 @@
 		74C204051E4265C000BC6D8D /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204041E4265C000BC6D8D /* Button.swift */; };
 		74C204071E426A5300BC6D8D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */; };
 		74C2040A1E42804A00BC6D8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204091E42804A00BC6D8D /* User.swift */; };
+		74C204121E4C29AB00BC6D8D /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */; };
+		74C204141E4C34C400BC6D8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204131E4C34C400BC6D8D /* ProfileViewController.swift */; };
+		74C204161E4C361700BC6D8D /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204151E4C361700BC6D8D /* EventListNavigationController.swift */; };
+		74C204181E4C362500BC6D8D /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		74C204041E4265C000BC6D8D /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		74C204091E42804A00BC6D8D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		74C204131E4C34C400BC6D8D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		74C204151E4C361700BC6D8D /* EventListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListNavigationController.swift; sourceTree = "<group>"; };
+		74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,7 @@
 		743BD07B1E3BC9BA009CAEAF /* Eventus */ = {
 			isa = PBXGroup;
 			children = (
+				74C204101E4C299F00BC6D8D /* Controllers */,
 				74C204081E42803F00BC6D8D /* Models */,
 				74C203E01E3BDD7000BC6D8D /* Extensions */,
 				74C203DF1E3BDD6B00BC6D8D /* Views */,
@@ -97,6 +106,7 @@
 				74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */,
 				74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */,
 				74C203FA1E4260C000BC6D8D /* EventListViewController.swift */,
+				74C204131E4C34C400BC6D8D /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -157,6 +167,16 @@
 				74C204091E42804A00BC6D8D /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		74C204101E4C299F00BC6D8D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */,
+				74C204151E4C361700BC6D8D /* EventListNavigationController.swift */,
+				74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,15 +251,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C204071E426A5300BC6D8D /* UIViewControllerExtensions.swift in Sources */,
+				74C204181E4C362500BC6D8D /* ProfileNavigationController.swift in Sources */,
 				74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */,
+				74C204121E4C29AB00BC6D8D /* MainTabBarController.swift in Sources */,
 				74C203EF1E3BE46B00BC6D8D /* UIViewExtensions.swift in Sources */,
 				74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */,
 				74C203F41E3BE60A00BC6D8D /* VerticalSeparator.swift in Sources */,
 				74C203FB1E4260C000BC6D8D /* EventListViewController.swift in Sources */,
 				74C204001E4264D500BC6D8D /* TextField.swift in Sources */,
 				74C2040A1E42804A00BC6D8D /* User.swift in Sources */,
+				74C204141E4C34C400BC6D8D /* ProfileViewController.swift in Sources */,
 				743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */,
 				74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */,
+				74C204161E4C361700BC6D8D /* EventListNavigationController.swift in Sources */,
 				74C204021E42658800BC6D8D /* TextFieldWithButtonView.swift in Sources */,
 				74C203ED1E3BE44100BC6D8D /* UIStackViewExtensions.swift in Sources */,
 				74C204051E4265C000BC6D8D /* Button.swift in Sources */,

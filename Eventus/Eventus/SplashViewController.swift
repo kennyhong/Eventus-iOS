@@ -28,10 +28,11 @@ class SplashViewController: UIViewController {
 			view.addSubviewForAutolayout(loginViewController.view)
 			loginViewController.view.constrainToFillView(view)
 		} else {
-			let eventListViewController = EventListViewController()
-			addChildViewController(eventListViewController)
-			view.addSubviewForAutolayout(eventListViewController.view)
-			eventListViewController.view.constrainToFillView(view)
+			let mainTabBarController = MainTabBarController()
+			mainTabBarController.logoutDelegate = self
+			addChildViewController(mainTabBarController)
+			view.addSubviewForAutolayout(mainTabBarController.view)
+			mainTabBarController.view.constrainToFillView(view)
 		}
 	}
 }
@@ -39,6 +40,15 @@ class SplashViewController: UIViewController {
 extension SplashViewController: LoginViewControllerDelegate {
 	
 	func didAuthenicateLogin() {
+		setupChildViewController()
+	}
+}
+
+extension SplashViewController: MainTabBarControllerDelegate {
+	
+	func didLogoutSession() {
+		User.shared.username = ""
+		User.shared.isLoggedIn = false
 		setupChildViewController()
 	}
 }

@@ -20,10 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window.rootViewController = splashViewController
 		window.backgroundColor = .white
 		window.makeKeyAndVisible()
+		setupDefaultColors()
+		return true
+	}
+	
+	private func setupDefaultColors() {
+		UIApplication.shared.statusBarStyle = .lightContent
 		
 		UITextField.appearance().tintColor = .eventusGreen
 		UITextView.appearance().tintColor = .eventusGreen
-		UINavigationBar.appearance().tintColor = .eventusGreen
-		return true
+		
+		UINavigationBar.appearance().tintColor = .white
+		UINavigationBar.appearance().barTintColor = .eventusGreen
+		UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+		
+		UITabBar.appearance().tintColor = .white
+		UITabBar.appearance().barTintColor = .eventusGreen
+		UITabBar.appearance().unselectedItemTintColor = .black
 	}
 }

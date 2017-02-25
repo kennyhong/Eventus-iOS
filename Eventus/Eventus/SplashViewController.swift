@@ -47,6 +47,10 @@ extension SplashViewController: LoginViewControllerDelegate {
 extension SplashViewController: MainTabBarControllerDelegate {
 	
 	func didLogoutSession() {
+		for subview in view.subviews {
+			subview.removeConstraints(subview.constraints)
+			subview.removeFromSuperview()
+		}
 		User.shared.username = ""
 		User.shared.isLoggedIn = false
 		setupChildViewController()

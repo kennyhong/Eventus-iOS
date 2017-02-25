@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "481C7DAB73FD4F70BDFB2DC7C7CAEDCEA33B8FD6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "481C7DAB73FD4F70BDFB2DC7C7CAEDCEA33B8FD6" : 9223372036854775807,
+    "FD96E6F317877B68EC0DE38B5BF00B6F92061B6E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7753FE8B-6C9B-4BCA-A008-97E113FD77E2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "481C7DAB73FD4F70BDFB2DC7C7CAEDCEA33B8FD6" : "Eventus-iOS\/",
+    "FD96E6F317877B68EC0DE38B5BF00B6F92061B6E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Eventus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Eventus\/Eventus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kennyhong\/Eventus-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "481C7DAB73FD4F70BDFB2DC7C7CAEDCEA33B8FD6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kennyhong\/Eventus.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FD96E6F317877B68EC0DE38B5BF00B6F92061B6E"
+    }
+  ]
+}

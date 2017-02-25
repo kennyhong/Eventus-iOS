@@ -9,6 +9,56 @@
 /* Begin PBXBuildFile section */
 		743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */; };
 		743BD0841E3BC9BA009CAEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BD0831E3BC9BA009CAEAF /* Assets.xcassets */; };
+		743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */; };
+		743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77821E5C42B600F8FE2E /* EventListTests.swift */; };
+		743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77841E5C43CB00F8FE2E /* ProfileTests.swift */; };
+		74670E0B1E594F4600EC0A3F /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74670E0A1E594F4600EC0A3F /* LoginTests.swift */; };
+		74670E0C1E59502000EC0A3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204091E42804A00BC6D8D /* User.swift */; };
+		74670E0D1E59502000EC0A3F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2041E1E4CE46A00BC6D8D /* Event.swift */; };
+		74670E0E1E59502000EC0A3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */; };
+		74670E0F1E59502000EC0A3F /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204151E4C361700BC6D8D /* EventListNavigationController.swift */; };
+		74670E101E59502000EC0A3F /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */; };
+		74670E111E59502000EC0A3F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */; };
+		74670E121E59502000EC0A3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */; };
+		74670E131E59502000EC0A3F /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FA1E4260C000BC6D8D /* EventListViewController.swift */; };
+		74670E141E59502000EC0A3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204131E4C34C400BC6D8D /* ProfileViewController.swift */; };
+		74670E151E59502000EC0A3F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */; };
+		74670E161E59502000EC0A3F /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */; };
+		74670E171E59502000EC0A3F /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */; };
+		74670E181E59502000EC0A3F /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EC1E3BE44100BC6D8D /* UIStackViewExtensions.swift */; };
+		74670E191E59502000EC0A3F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */; };
+		74670E1A1E59502000EC0A3F /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FC1E42632100BC6D8D /* UILabelExtensions.swift */; };
+		74670E1B1E59502000EC0A3F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */; };
+		74670E1C1E59502000EC0A3F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204041E4265C000BC6D8D /* Button.swift */; };
+		74670E1D1E59502000EC0A3F /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FF1E4264D500BC6D8D /* TextField.swift */; };
+		74670E1E1E59502000EC0A3F /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */; };
+		74670E1F1E59502000EC0A3F /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */; };
+		74670E201E59502000EC0A3F /* TextFieldWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */; };
+		74670E211E59502000EC0A3F /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204201E4CE59100BC6D8D /* EventPreviewView.swift */; };
+		74670E251E5952E700EC0A3F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */; };
+		74670E261E5952E700EC0A3F /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204151E4C361700BC6D8D /* EventListNavigationController.swift */; };
+		74670E271E5952E700EC0A3F /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */; };
+		74670E281E5952E700EC0A3F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */; };
+		74670E291E5952E700EC0A3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */; };
+		74670E2A1E5952E700EC0A3F /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FA1E4260C000BC6D8D /* EventListViewController.swift */; };
+		74670E2B1E5952E700EC0A3F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204131E4C34C400BC6D8D /* ProfileViewController.swift */; };
+		74670E2C1E5952E700EC0A3F /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */; };
+		74670E2D1E5952E700EC0A3F /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */; };
+		74670E2E1E5952E700EC0A3F /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */; };
+		74670E2F1E5952E700EC0A3F /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EC1E3BE44100BC6D8D /* UIStackViewExtensions.swift */; };
+		74670E301E5952E700EC0A3F /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */; };
+		74670E311E5952E700EC0A3F /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FC1E42632100BC6D8D /* UILabelExtensions.swift */; };
+		74670E321E5952E700EC0A3F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */; };
+		74670E331E5952E700EC0A3F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204041E4265C000BC6D8D /* Button.swift */; };
+		74670E341E5952E700EC0A3F /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203FF1E4264D500BC6D8D /* TextField.swift */; };
+		74670E351E5952E700EC0A3F /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */; };
+		74670E361E5952E700EC0A3F /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */; };
+		74670E371E5952E700EC0A3F /* TextFieldWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */; };
+		74670E381E5952E700EC0A3F /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204201E4CE59100BC6D8D /* EventPreviewView.swift */; };
+		749A7B041E5763F200548133 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B031E5763F200548133 /* EventTests.swift */; };
+		749A7B051E5765A100548133 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2041E1E4CE46A00BC6D8D /* Event.swift */; };
+		749A7B061E5765B300548133 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204091E42804A00BC6D8D /* User.swift */; };
+		749A7B0B1E576CC000548133 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B0A1E576CC000548133 /* UserTests.swift */; };
 		74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */; };
 		74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */; };
 		74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */; };
@@ -29,13 +79,43 @@
 		74C204141E4C34C400BC6D8D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204131E4C34C400BC6D8D /* ProfileViewController.swift */; };
 		74C204161E4C361700BC6D8D /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204151E4C361700BC6D8D /* EventListNavigationController.swift */; };
 		74C204181E4C362500BC6D8D /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */; };
+		74C2041F1E4CE46A00BC6D8D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2041E1E4CE46A00BC6D8D /* Event.swift */; };
+		74C204211E4CE59100BC6D8D /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204201E4CE59100BC6D8D /* EventPreviewView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74670E051E594EEC00EC0A3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 743BD0711E3BC9B9009CAEAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 743BD0781E3BC9B9009CAEAF;
+			remoteInfo = Eventus;
+		};
+		749A7AFE1E57636800548133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 743BD0711E3BC9B9009CAEAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 743BD0781E3BC9B9009CAEAF;
+			remoteInfo = Eventus;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		743BD0791E3BC9BA009CAEAF /* Eventus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		743BD0831E3BC9BA009CAEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		743BD0881E3BC9BA009CAEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutTests.swift; sourceTree = "<group>"; };
+		743C777A1E5A597400F8FE2E /* Eventus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eventus.entitlements; sourceTree = "<group>"; };
+		743C77821E5C42B600F8FE2E /* EventListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTests.swift; sourceTree = "<group>"; };
+		743C77841E5C43CB00F8FE2E /* ProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		74670E001E594EEC00EC0A3F /* EventusViewLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventusViewLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74670E041E594EEC00EC0A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74670E0A1E594F4600EC0A3F /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		749A7AF91E57636800548133 /* EventusUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventusUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		749A7AFD1E57636800548133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		749A7B031E5763F200548133 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
+		749A7B0A1E576CC000548133 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
 		74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
@@ -56,10 +136,26 @@
 		74C204131E4C34C400BC6D8D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		74C204151E4C361700BC6D8D /* EventListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListNavigationController.swift; sourceTree = "<group>"; };
 		74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
+		74C2041E1E4CE46A00BC6D8D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		74C204201E4CE59100BC6D8D /* EventPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		743BD0761E3BC9B9009CAEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74670DFD1E594EEC00EC0A3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749A7AF61E57636800548133 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				743BD07B1E3BC9BA009CAEAF /* Eventus */,
+				749A7B071E5767B700548133 /* EventusTests */,
 				743BD07A1E3BC9BA009CAEAF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				743BD0791E3BC9BA009CAEAF /* Eventus.app */,
+				749A7AF91E57636800548133 /* EventusUnitTests.xctest */,
+				74670E001E594EEC00EC0A3F /* EventusViewLogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,16 +187,47 @@
 		743BD07B1E3BC9BA009CAEAF /* Eventus */ = {
 			isa = PBXGroup;
 			children = (
-				74C204101E4C299F00BC6D8D /* Controllers */,
 				74C204081E42803F00BC6D8D /* Models */,
+				74C204101E4C299F00BC6D8D /* Controllers */,
 				74C203E01E3BDD7000BC6D8D /* Extensions */,
 				74C203DF1E3BDD6B00BC6D8D /* Views */,
-				74C203DE1E3BDD6200BC6D8D /* View Controllers */,
 				743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */,
 				743BD0831E3BC9BA009CAEAF /* Assets.xcassets */,
 				743BD0881E3BC9BA009CAEAF /* Info.plist */,
+				743C777A1E5A597400F8FE2E /* Eventus.entitlements */,
 			);
 			path = Eventus;
+			sourceTree = "<group>";
+		};
+		74670E011E594EEC00EC0A3F /* EventusViewLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				743C77841E5C43CB00F8FE2E /* ProfileTests.swift */,
+				743C77821E5C42B600F8FE2E /* EventListTests.swift */,
+				74670E0A1E594F4600EC0A3F /* LoginTests.swift */,
+				743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */,
+				74670E041E594EEC00EC0A3F /* Info.plist */,
+			);
+			path = EventusViewLogicTests;
+			sourceTree = "<group>";
+		};
+		749A7AFA1E57636800548133 /* EventusUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				749A7B0A1E576CC000548133 /* UserTests.swift */,
+				749A7B031E5763F200548133 /* EventTests.swift */,
+				749A7AFD1E57636800548133 /* Info.plist */,
+			);
+			path = EventusUnitTests;
+			sourceTree = "<group>";
+		};
+		749A7B071E5767B700548133 /* EventusTests */ = {
+			isa = PBXGroup;
+			children = (
+				74670E011E594EEC00EC0A3F /* EventusViewLogicTests */,
+				749A7AFA1E57636800548133 /* EventusUnitTests */,
+			);
+			name = EventusTests;
 			sourceTree = "<group>";
 		};
 		74C203DE1E3BDD6200BC6D8D /* View Controllers */ = {
@@ -141,6 +271,7 @@
 				74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */,
 				74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */,
 				74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */,
+				74C204201E4CE59100BC6D8D /* EventPreviewView.swift */,
 			);
 			name = UIViews;
 			sourceTree = "<group>";
@@ -165,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				74C204091E42804A00BC6D8D /* User.swift */,
+				74C2041E1E4CE46A00BC6D8D /* Event.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -175,6 +307,7 @@
 				74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */,
 				74C204151E4C361700BC6D8D /* EventListNavigationController.swift */,
 				74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */,
+				74C203DE1E3BDD6200BC6D8D /* View Controllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -199,6 +332,42 @@
 			productReference = 743BD0791E3BC9BA009CAEAF /* Eventus.app */;
 			productType = "com.apple.product-type.application";
 		};
+		74670DFF1E594EEC00EC0A3F /* EventusViewLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74670E071E594EEC00EC0A3F /* Build configuration list for PBXNativeTarget "EventusViewLogicTests" */;
+			buildPhases = (
+				74670DFC1E594EEC00EC0A3F /* Sources */,
+				74670DFD1E594EEC00EC0A3F /* Frameworks */,
+				74670DFE1E594EEC00EC0A3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74670E061E594EEC00EC0A3F /* PBXTargetDependency */,
+			);
+			name = EventusViewLogicTests;
+			productName = EventusViewLogicTests;
+			productReference = 74670E001E594EEC00EC0A3F /* EventusViewLogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		749A7AF81E57636800548133 /* EventusUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 749A7B021E57636800548133 /* Build configuration list for PBXNativeTarget "EventusUnitTests" */;
+			buildPhases = (
+				749A7AF51E57636800548133 /* Sources */,
+				749A7AF61E57636800548133 /* Frameworks */,
+				749A7AF71E57636800548133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				749A7AFF1E57636800548133 /* PBXTargetDependency */,
+			);
+			name = EventusUnitTests;
+			productName = EventusUnitTests;
+			productReference = 749A7AF91E57636800548133 /* EventusUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +382,23 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZW62S74UAN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					74670DFF1E594EEC00EC0A3F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZW62S74UAN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 743BD0781E3BC9B9009CAEAF;
+					};
+					749A7AF81E57636800548133 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZW62S74UAN;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 743BD0781E3BC9B9009CAEAF;
 					};
 				};
 			};
@@ -230,6 +416,8 @@
 			projectRoot = "";
 			targets = (
 				743BD0781E3BC9B9009CAEAF /* Eventus */,
+				749A7AF81E57636800548133 /* EventusUnitTests */,
+				74670DFF1E594EEC00EC0A3F /* EventusViewLogicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +428,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				743BD0841E3BC9BA009CAEAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74670DFE1E594EEC00EC0A3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749A7AF71E57636800548133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +463,9 @@
 				74C204001E4264D500BC6D8D /* TextField.swift in Sources */,
 				74C2040A1E42804A00BC6D8D /* User.swift in Sources */,
 				74C204141E4C34C400BC6D8D /* ProfileViewController.swift in Sources */,
+				74C204211E4CE59100BC6D8D /* EventPreviewView.swift in Sources */,
 				743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */,
+				74C2041F1E4CE46A00BC6D8D /* Event.swift in Sources */,
 				74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */,
 				74C204161E4C361700BC6D8D /* EventListNavigationController.swift in Sources */,
 				74C204021E42658800BC6D8D /* TextFieldWithButtonView.swift in Sources */,
@@ -274,7 +478,84 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74670DFC1E594EEC00EC0A3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74670E0C1E59502000EC0A3F /* User.swift in Sources */,
+				743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */,
+				74670E0D1E59502000EC0A3F /* Event.swift in Sources */,
+				743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */,
+				74670E0E1E59502000EC0A3F /* MainTabBarController.swift in Sources */,
+				74670E0F1E59502000EC0A3F /* EventListNavigationController.swift in Sources */,
+				743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */,
+				74670E101E59502000EC0A3F /* ProfileNavigationController.swift in Sources */,
+				74670E111E59502000EC0A3F /* SplashViewController.swift in Sources */,
+				74670E121E59502000EC0A3F /* LoginViewController.swift in Sources */,
+				74670E131E59502000EC0A3F /* EventListViewController.swift in Sources */,
+				74670E141E59502000EC0A3F /* ProfileViewController.swift in Sources */,
+				74670E151E59502000EC0A3F /* UIColorExtensions.swift in Sources */,
+				74670E161E59502000EC0A3F /* UIEdgeInsetsExtensions.swift in Sources */,
+				74670E171E59502000EC0A3F /* CGFloatExtensions.swift in Sources */,
+				74670E181E59502000EC0A3F /* UIStackViewExtensions.swift in Sources */,
+				74670E191E59502000EC0A3F /* UIViewExtensions.swift in Sources */,
+				74670E1A1E59502000EC0A3F /* UILabelExtensions.swift in Sources */,
+				74670E1B1E59502000EC0A3F /* UIViewControllerExtensions.swift in Sources */,
+				74670E1C1E59502000EC0A3F /* Button.swift in Sources */,
+				74670E1D1E59502000EC0A3F /* TextField.swift in Sources */,
+				74670E1E1E59502000EC0A3F /* HorizontalSeparator.swift in Sources */,
+				74670E1F1E59502000EC0A3F /* VerticalSeparator.swift in Sources */,
+				74670E201E59502000EC0A3F /* TextFieldWithButtonView.swift in Sources */,
+				74670E211E59502000EC0A3F /* EventPreviewView.swift in Sources */,
+				74670E0B1E594F4600EC0A3F /* LoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		749A7AF51E57636800548133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74670E251E5952E700EC0A3F /* MainTabBarController.swift in Sources */,
+				74670E261E5952E700EC0A3F /* EventListNavigationController.swift in Sources */,
+				74670E271E5952E700EC0A3F /* ProfileNavigationController.swift in Sources */,
+				74670E281E5952E700EC0A3F /* SplashViewController.swift in Sources */,
+				74670E291E5952E700EC0A3F /* LoginViewController.swift in Sources */,
+				74670E2A1E5952E700EC0A3F /* EventListViewController.swift in Sources */,
+				74670E2B1E5952E700EC0A3F /* ProfileViewController.swift in Sources */,
+				74670E2C1E5952E700EC0A3F /* UIColorExtensions.swift in Sources */,
+				74670E2D1E5952E700EC0A3F /* UIEdgeInsetsExtensions.swift in Sources */,
+				74670E2E1E5952E700EC0A3F /* CGFloatExtensions.swift in Sources */,
+				74670E2F1E5952E700EC0A3F /* UIStackViewExtensions.swift in Sources */,
+				74670E301E5952E700EC0A3F /* UIViewExtensions.swift in Sources */,
+				74670E311E5952E700EC0A3F /* UILabelExtensions.swift in Sources */,
+				74670E321E5952E700EC0A3F /* UIViewControllerExtensions.swift in Sources */,
+				74670E331E5952E700EC0A3F /* Button.swift in Sources */,
+				74670E341E5952E700EC0A3F /* TextField.swift in Sources */,
+				74670E351E5952E700EC0A3F /* HorizontalSeparator.swift in Sources */,
+				74670E361E5952E700EC0A3F /* VerticalSeparator.swift in Sources */,
+				74670E371E5952E700EC0A3F /* TextFieldWithButtonView.swift in Sources */,
+				74670E381E5952E700EC0A3F /* EventPreviewView.swift in Sources */,
+				749A7B0B1E576CC000548133 /* UserTests.swift in Sources */,
+				749A7B061E5765B300548133 /* User.swift in Sources */,
+				749A7B051E5765A100548133 /* Event.swift in Sources */,
+				749A7B041E5763F200548133 /* EventTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74670E061E594EEC00EC0A3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 743BD0781E3BC9B9009CAEAF /* Eventus */;
+			targetProxy = 74670E051E594EEC00EC0A3F /* PBXContainerItemProxy */;
+		};
+		749A7AFF1E57636800548133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 743BD0781E3BC9B9009CAEAF /* Eventus */;
+			targetProxy = 749A7AFE1E57636800548133 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		743BD0891E3BC9BA009CAEAF /* Debug */ = {
@@ -374,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Eventus/Eventus.entitlements;
 				DEVELOPMENT_TEAM = ZW62S74UAN;
 				INFOPLIST_FILE = Eventus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -387,12 +669,67 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Eventus/Eventus.entitlements;
 				DEVELOPMENT_TEAM = ZW62S74UAN;
 				INFOPLIST_FILE = Eventus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kierancairney.Eventus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		74670E081E594EEC00EC0A3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZW62S74UAN;
+				INFOPLIST_FILE = EventusViewLogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kierancairney.EventusViewLogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Eventus;
+			};
+			name = Debug;
+		};
+		74670E091E594EEC00EC0A3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZW62S74UAN;
+				INFOPLIST_FILE = EventusViewLogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kierancairney.EventusViewLogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Eventus;
+			};
+			name = Release;
+		};
+		749A7B001E57636800548133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZW62S74UAN;
+				INFOPLIST_FILE = EventusUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kierancairney.EventusUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eventus.app/Eventus";
+			};
+			name = Debug;
+		};
+		749A7B011E57636800548133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZW62S74UAN;
+				INFOPLIST_FILE = EventusUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kierancairney.EventusUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Eventus.app/Eventus";
 			};
 			name = Release;
 		};
@@ -413,6 +750,24 @@
 			buildConfigurations = (
 				743BD08C1E3BC9BA009CAEAF /* Debug */,
 				743BD08D1E3BC9BA009CAEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74670E071E594EEC00EC0A3F /* Build configuration list for PBXNativeTarget "EventusViewLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74670E081E594EEC00EC0A3F /* Debug */,
+				74670E091E594EEC00EC0A3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		749A7B021E57636800548133 /* Build configuration list for PBXNativeTarget "EventusUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				749A7B001E57636800548133 /* Debug */,
+				749A7B011E57636800548133 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

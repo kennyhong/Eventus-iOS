@@ -27,7 +27,7 @@ class ProfileViewController: UIViewController {
 	}
 	
 	private func setup() {
-		title = "Profile"
+		title = User.shared.username!
 		
 		setupLogoutButton()
 	}

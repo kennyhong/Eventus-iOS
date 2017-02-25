@@ -28,6 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "749A7AF81E57636800548133"
+               BuildableName = "EventusUnitTests.xctest"
+               BlueprintName = "EventusUnitTests"
+               ReferencedContainer = "container:Eventus.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "749A7B0F1E5785A500548133"
+               BuildableName = "EventusUITests.xctest"
+               BlueprintName = "EventusUITests"
+               ReferencedContainer = "container:Eventus.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "74670DFF1E594EEC00EC0A3F"
+               BuildableName = "EventusViewLogicTests.xctest"
+               BlueprintName = "EventusViewLogicTests"
+               ReferencedContainer = "container:Eventus.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

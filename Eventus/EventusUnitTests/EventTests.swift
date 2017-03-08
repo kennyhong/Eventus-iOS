@@ -22,36 +22,33 @@ class EventTests: XCTestCase {
     
     func testNoParameterConstructor() {
 		let event = Event()
+		XCTAssertNil(event.id)
 		XCTAssertNil(event.name)
 		XCTAssertNil(event.eventDescription)
 		XCTAssertNil(event.date)
-		XCTAssertNotNil(event.services)
-		
-		XCTAssertEqual(event.services, [])
     }
 	
 	func testPartialParameterConstructor() {
 		let event = Event(name: "name-test", eventDescription: "test-description")
+		XCTAssertNil(event.id)
 		XCTAssertNotNil(event.name)
 		XCTAssertNotNil(event.eventDescription)
 		XCTAssertNil(event.date)
-		XCTAssertNotNil(event.services)
 		
 		XCTAssertEqual(event.name, "name-test")
 		XCTAssertEqual(event.eventDescription, "test-description")
-		XCTAssertEqual(event.services, [])
 	}
 	
 	func testFullParameterConstructor() {
-		let event = Event(name: "name-test", eventDescription: "test-description", date: "test-date", services: ["test-service"])
+		let event = Event(id: 1, name: "name-test", eventDescription: "test-description", date: "test-date")
+		XCTAssertNotNil(event.id)
 		XCTAssertNotNil(event.name)
 		XCTAssertNotNil(event.eventDescription)
 		XCTAssertNotNil(event.date)
-		XCTAssertNotNil(event.services)
 		
+		XCTAssertEqual(event.id, 1)
 		XCTAssertEqual(event.name, "name-test")
 		XCTAssertEqual(event.eventDescription, "test-description")
 		XCTAssertEqual(event.date, "test-date")
-		XCTAssertEqual(event.services, ["test-service"])
 	}
 }

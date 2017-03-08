@@ -19,6 +19,7 @@ class LoginTests: XCTestCase {
         super.setUp()
 		
 		continueAfterFailure = false
+		app.launchEnvironment = ["isTest":"true"]
 		app.launch()
 		
 		tearDownShouldLogout = false

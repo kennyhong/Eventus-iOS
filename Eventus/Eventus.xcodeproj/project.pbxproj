@@ -7,11 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		741289501E6A6A58008E0C58 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */; };
+		74240FF91E706ED100DA67A4 /* AddEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74240FF81E706ED100DA67A4 /* AddEventTests.swift */; };
 		743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */; };
 		743BD0841E3BC9BA009CAEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743BD0831E3BC9BA009CAEAF /* Assets.xcassets */; };
 		743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */; };
 		743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77821E5C42B600F8FE2E /* EventListTests.swift */; };
 		743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77841E5C43CB00F8FE2E /* ProfileTests.swift */; };
+		7457CC1E1E707B47003B2414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */; };
+		7457CC1F1E707B4B003B2414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */; };
+		7457CC241E708337003B2414 /* EventDetailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7457CC231E708337003B2414 /* EventDetailsTests.swift */; };
+		7457CC261E708AB3003B2414 /* CurrentServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */; };
+		7457CC281E708ABE003B2414 /* AddServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7457CC271E708ABE003B2414 /* AddServicesTests.swift */; };
 		74670E0B1E594F4600EC0A3F /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74670E0A1E594F4600EC0A3F /* LoginTests.swift */; };
 		74670E0C1E59502000EC0A3F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204091E42804A00BC6D8D /* User.swift */; };
 		74670E0D1E59502000EC0A3F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2041E1E4CE46A00BC6D8D /* Event.swift */; };
@@ -60,6 +67,35 @@
 		749A7B051E5765A100548133 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2041E1E4CE46A00BC6D8D /* Event.swift */; };
 		749A7B061E5765B300548133 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204091E42804A00BC6D8D /* User.swift */; };
 		749A7B0B1E576CC000548133 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B0A1E576CC000548133 /* UserTests.swift */; };
+		74A2BA631E6F8851002905D4 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA621E6F8851002905D4 /* AddEventViewController.swift */; };
+		74A2BA651E6F9438002905D4 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA641E6F9438002905D4 /* TextFieldWithImageView.swift */; };
+		74A2BA701E6FC074002905D4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12B1E6A897B004047EC /* Service.swift */; };
+		74A2BA711E6FC074002905D4 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */; };
+		74A2BA721E6FC074002905D4 /* CurrentServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1271E6A781D004047EC /* CurrentServicesListViewController.swift */; };
+		74A2BA731E6FC07E002905D4 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1291E6A7EA8004047EC /* AddServicesListViewController.swift */; };
+		74A2BA741E6FC07E002905D4 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12F1E6A941C004047EC /* ServiceDetailsViewController.swift */; };
+		74A2BA751E6FC07E002905D4 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA621E6F8851002905D4 /* AddEventViewController.swift */; };
+		74A2BA761E6FC07E002905D4 /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E121FA1E6E8C1A0089C02B /* URLRequestExtensions.swift */; };
+		74A2BA771E6FC07E002905D4 /* ButtonWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1251E6A75CE004047EC /* ButtonWithImageView.swift */; };
+		74A2BA781E6FC07E002905D4 /* ServicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12D1E6A8A21004047EC /* ServicePreviewView.swift */; };
+		74A2BA791E6FC07E002905D4 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA641E6F9438002905D4 /* TextFieldWithImageView.swift */; };
+		74A2BA7A1E6FC08F002905D4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12B1E6A897B004047EC /* Service.swift */; };
+		74A2BA7B1E6FC08F002905D4 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */; };
+		74A2BA7C1E6FC08F002905D4 /* CurrentServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1271E6A781D004047EC /* CurrentServicesListViewController.swift */; };
+		74A2BA7D1E6FC08F002905D4 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1291E6A7EA8004047EC /* AddServicesListViewController.swift */; };
+		74A2BA7E1E6FC08F002905D4 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12F1E6A941C004047EC /* ServiceDetailsViewController.swift */; };
+		74A2BA7F1E6FC08F002905D4 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA621E6F8851002905D4 /* AddEventViewController.swift */; };
+		74A2BA801E6FC08F002905D4 /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E121FA1E6E8C1A0089C02B /* URLRequestExtensions.swift */; };
+		74A2BA811E6FC08F002905D4 /* ButtonWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1251E6A75CE004047EC /* ButtonWithImageView.swift */; };
+		74A2BA821E6FC08F002905D4 /* ServicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12D1E6A8A21004047EC /* ServicePreviewView.swift */; };
+		74A2BA831E6FC08F002905D4 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA641E6F9438002905D4 /* TextFieldWithImageView.swift */; };
+		74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */; };
+		74B8E1261E6A75CE004047EC /* ButtonWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1251E6A75CE004047EC /* ButtonWithImageView.swift */; };
+		74B8E1281E6A781D004047EC /* CurrentServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1271E6A781D004047EC /* CurrentServicesListViewController.swift */; };
+		74B8E12A1E6A7EA8004047EC /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E1291E6A7EA8004047EC /* AddServicesListViewController.swift */; };
+		74B8E12C1E6A897B004047EC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12B1E6A897B004047EC /* Service.swift */; };
+		74B8E12E1E6A8A21004047EC /* ServicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12D1E6A8A21004047EC /* ServicePreviewView.swift */; };
+		74B8E1301E6A941C004047EC /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8E12F1E6A941C004047EC /* ServiceDetailsViewController.swift */; };
 		74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */; };
 		74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */; };
 		74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */; };
@@ -82,6 +118,10 @@
 		74C204181E4C362500BC6D8D /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */; };
 		74C2041F1E4CE46A00BC6D8D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C2041E1E4CE46A00BC6D8D /* Event.swift */; };
 		74C204211E4CE59100BC6D8D /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C204201E4CE59100BC6D8D /* EventPreviewView.swift */; };
+		74CEFD8D1E709A0B008D1F6C /* DeleteServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */; };
+		74CEFD8E1E709C84008D1F6C /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 743BD0831E3BC9BA009CAEAF /* Assets.xcassets */; };
+		74CEFD8F1E709C89008D1F6C /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 743BD0831E3BC9BA009CAEAF /* Assets.xcassets */; };
+		74E121FB1E6E8C1A0089C02B /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E121FA1E6E8C1A0089C02B /* URLRequestExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +142,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
+		74240FF81E706ED100DA67A4 /* AddEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventTests.swift; sourceTree = "<group>"; };
 		743BD0791E3BC9BA009CAEAF /* Eventus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		743BD0831E3BC9BA009CAEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +152,9 @@
 		743C777A1E5A597400F8FE2E /* Eventus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Eventus.entitlements; sourceTree = "<group>"; };
 		743C77821E5C42B600F8FE2E /* EventListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTests.swift; sourceTree = "<group>"; };
 		743C77841E5C43CB00F8FE2E /* ProfileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		7457CC231E708337003B2414 /* EventDetailsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsTests.swift; sourceTree = "<group>"; };
+		7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentServicesTests.swift; sourceTree = "<group>"; };
+		7457CC271E708ABE003B2414 /* AddServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServicesTests.swift; sourceTree = "<group>"; };
 		74670E001E594EEC00EC0A3F /* EventusViewLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventusViewLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74670E041E594EEC00EC0A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74670E0A1E594F4600EC0A3F /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
@@ -118,6 +163,15 @@
 		749A7AFD1E57636800548133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749A7B031E5763F200548133 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
 		749A7B0A1E576CC000548133 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		74A2BA621E6F8851002905D4 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		74A2BA641E6F9438002905D4 /* TextFieldWithImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithImageView.swift; sourceTree = "<group>"; };
+		74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		74B8E1251E6A75CE004047EC /* ButtonWithImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithImageView.swift; sourceTree = "<group>"; };
+		74B8E1271E6A781D004047EC /* CurrentServicesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentServicesListViewController.swift; sourceTree = "<group>"; };
+		74B8E1291E6A7EA8004047EC /* AddServicesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServicesListViewController.swift; sourceTree = "<group>"; };
+		74B8E12B1E6A897B004047EC /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		74B8E12D1E6A8A21004047EC /* ServicePreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePreviewView.swift; sourceTree = "<group>"; };
+		74B8E12F1E6A941C004047EC /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
 		74C203E11E3BDD8F00BC6D8D /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		74C203E81E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsExtensions.swift; sourceTree = "<group>"; };
 		74C203EA1E3BE04C00BC6D8D /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
@@ -140,6 +194,8 @@
 		74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNavigationController.swift; sourceTree = "<group>"; };
 		74C2041E1E4CE46A00BC6D8D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		74C204201E4CE59100BC6D8D /* EventPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPreviewView.swift; sourceTree = "<group>"; };
+		74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteServicesTests.swift; sourceTree = "<group>"; };
+		74E121FA1E6E8C1A0089C02B /* URLRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +261,11 @@
 		74670E011E594EEC00EC0A3F /* EventusViewLogicTests */ = {
 			isa = PBXGroup;
 			children = (
+				74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */,
+				7457CC271E708ABE003B2414 /* AddServicesTests.swift */,
+				7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */,
+				7457CC231E708337003B2414 /* EventDetailsTests.swift */,
+				74240FF81E706ED100DA67A4 /* AddEventTests.swift */,
 				743C77841E5C43CB00F8FE2E /* ProfileTests.swift */,
 				743C77821E5C42B600F8FE2E /* EventListTests.swift */,
 				74670E0A1E594F4600EC0A3F /* LoginTests.swift */,
@@ -217,6 +278,7 @@
 		749A7AFA1E57636800548133 /* EventusUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */,
 				749A7B0A1E576CC000548133 /* UserTests.swift */,
 				749A7B031E5763F200548133 /* EventTests.swift */,
 				749A7AFD1E57636800548133 /* Info.plist */,
@@ -240,6 +302,11 @@
 				74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */,
 				74C203FA1E4260C000BC6D8D /* EventListViewController.swift */,
 				74C204131E4C34C400BC6D8D /* ProfileViewController.swift */,
+				7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */,
+				74B8E1271E6A781D004047EC /* CurrentServicesListViewController.swift */,
+				74B8E1291E6A7EA8004047EC /* AddServicesListViewController.swift */,
+				74B8E12F1E6A941C004047EC /* ServiceDetailsViewController.swift */,
+				74A2BA621E6F8851002905D4 /* AddEventViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -264,6 +331,7 @@
 				74C203EE1E3BE46B00BC6D8D /* UIViewExtensions.swift */,
 				74C203FC1E42632100BC6D8D /* UILabelExtensions.swift */,
 				74C204061E426A5300BC6D8D /* UIViewControllerExtensions.swift */,
+				74E121FA1E6E8C1A0089C02B /* URLRequestExtensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -271,10 +339,13 @@
 		74C203F01E3BE5BF00BC6D8D /* UIViews */ = {
 			isa = PBXGroup;
 			children = (
+				74B8E1251E6A75CE004047EC /* ButtonWithImageView.swift */,
 				74C203F11E3BE5D200BC6D8D /* HorizontalSeparator.swift */,
 				74C203F31E3BE60A00BC6D8D /* VerticalSeparator.swift */,
 				74C204011E42658800BC6D8D /* TextFieldWithButtonView.swift */,
 				74C204201E4CE59100BC6D8D /* EventPreviewView.swift */,
+				74B8E12D1E6A8A21004047EC /* ServicePreviewView.swift */,
+				74A2BA641E6F9438002905D4 /* TextFieldWithImageView.swift */,
 			);
 			name = UIViews;
 			sourceTree = "<group>";
@@ -300,6 +371,7 @@
 			children = (
 				74C204091E42804A00BC6D8D /* User.swift */,
 				74C2041E1E4CE46A00BC6D8D /* Event.swift */,
+				74B8E12B1E6A897B004047EC /* Service.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -456,11 +528,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74B8E12A1E6A7EA8004047EC /* AddServicesListViewController.swift in Sources */,
+				74A2BA631E6F8851002905D4 /* AddEventViewController.swift in Sources */,
+				74B8E12C1E6A897B004047EC /* Service.swift in Sources */,
 				74C204071E426A5300BC6D8D /* UIViewControllerExtensions.swift in Sources */,
 				74C204181E4C362500BC6D8D /* ProfileNavigationController.swift in Sources */,
 				74C203E91E3BE02600BC6D8D /* UIEdgeInsetsExtensions.swift in Sources */,
+				74B8E1301E6A941C004047EC /* ServiceDetailsViewController.swift in Sources */,
+				74A2BA651E6F9438002905D4 /* TextFieldWithImageView.swift in Sources */,
 				74C204121E4C29AB00BC6D8D /* MainTabBarController.swift in Sources */,
 				74C203EF1E3BE46B00BC6D8D /* UIViewExtensions.swift in Sources */,
+				74B8E1261E6A75CE004047EC /* ButtonWithImageView.swift in Sources */,
 				74C203E21E3BDD8F00BC6D8D /* UIColorExtensions.swift in Sources */,
 				74C203F41E3BE60A00BC6D8D /* VerticalSeparator.swift in Sources */,
 				74C203FB1E4260C000BC6D8D /* EventListViewController.swift in Sources */,
@@ -468,6 +546,9 @@
 				74C2040A1E42804A00BC6D8D /* User.swift in Sources */,
 				74C204141E4C34C400BC6D8D /* ProfileViewController.swift in Sources */,
 				74C204211E4CE59100BC6D8D /* EventPreviewView.swift in Sources */,
+				741289501E6A6A58008E0C58 /* EventDetailsViewController.swift in Sources */,
+				74B8E1281E6A781D004047EC /* CurrentServicesListViewController.swift in Sources */,
+				74E121FB1E6E8C1A0089C02B /* URLRequestExtensions.swift in Sources */,
 				743BD07D1E3BC9BA009CAEAF /* AppDelegate.swift in Sources */,
 				74C2041F1E4CE46A00BC6D8D /* Event.swift in Sources */,
 				74C203EB1E3BE04C00BC6D8D /* CGFloatExtensions.swift in Sources */,
@@ -478,6 +559,7 @@
 				74C203FD1E42632100BC6D8D /* UILabelExtensions.swift in Sources */,
 				74C203F61E3FD5BA00BC6D8D /* SplashViewController.swift in Sources */,
 				74C203F21E3BE5D200BC6D8D /* HorizontalSeparator.swift in Sources */,
+				74B8E12E1E6A8A21004047EC /* ServicePreviewView.swift in Sources */,
 				74C203F91E3FD6D700BC6D8D /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,11 +568,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CEFD8E1E709C84008D1F6C /* Assets.xcassets in Sources */,
+				7457CC1F1E707B4B003B2414 /* AppDelegate.swift in Sources */,
+				74A2BA7A1E6FC08F002905D4 /* Service.swift in Sources */,
+				74A2BA7B1E6FC08F002905D4 /* EventDetailsViewController.swift in Sources */,
+				74A2BA7C1E6FC08F002905D4 /* CurrentServicesListViewController.swift in Sources */,
+				74A2BA7D1E6FC08F002905D4 /* AddServicesListViewController.swift in Sources */,
+				74A2BA7E1E6FC08F002905D4 /* ServiceDetailsViewController.swift in Sources */,
+				74A2BA7F1E6FC08F002905D4 /* AddEventViewController.swift in Sources */,
+				74A2BA801E6FC08F002905D4 /* URLRequestExtensions.swift in Sources */,
+				74A2BA811E6FC08F002905D4 /* ButtonWithImageView.swift in Sources */,
+				74A2BA821E6FC08F002905D4 /* ServicePreviewView.swift in Sources */,
+				74A2BA831E6FC08F002905D4 /* TextFieldWithImageView.swift in Sources */,
 				74670E0C1E59502000EC0A3F /* User.swift in Sources */,
+				7457CC281E708ABE003B2414 /* AddServicesTests.swift in Sources */,
 				743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */,
 				74670E0D1E59502000EC0A3F /* Event.swift in Sources */,
 				743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */,
 				74670E0E1E59502000EC0A3F /* MainTabBarController.swift in Sources */,
+				74240FF91E706ED100DA67A4 /* AddEventTests.swift in Sources */,
 				74670E0F1E59502000EC0A3F /* EventListNavigationController.swift in Sources */,
 				743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */,
 				74670E101E59502000EC0A3F /* ProfileNavigationController.swift in Sources */,
@@ -501,9 +597,12 @@
 				74670E151E59502000EC0A3F /* UIColorExtensions.swift in Sources */,
 				74670E161E59502000EC0A3F /* UIEdgeInsetsExtensions.swift in Sources */,
 				74670E171E59502000EC0A3F /* CGFloatExtensions.swift in Sources */,
+				74CEFD8D1E709A0B008D1F6C /* DeleteServicesTests.swift in Sources */,
 				74670E181E59502000EC0A3F /* UIStackViewExtensions.swift in Sources */,
+				7457CC241E708337003B2414 /* EventDetailsTests.swift in Sources */,
 				74670E191E59502000EC0A3F /* UIViewExtensions.swift in Sources */,
 				74670E1A1E59502000EC0A3F /* UILabelExtensions.swift in Sources */,
+				7457CC261E708AB3003B2414 /* CurrentServicesTests.swift in Sources */,
 				74670E1B1E59502000EC0A3F /* UIViewControllerExtensions.swift in Sources */,
 				74670E1C1E59502000EC0A3F /* Button.swift in Sources */,
 				74670E1D1E59502000EC0A3F /* TextField.swift in Sources */,
@@ -519,6 +618,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74CEFD8F1E709C89008D1F6C /* Assets.xcassets in Sources */,
+				7457CC1E1E707B47003B2414 /* AppDelegate.swift in Sources */,
+				74A2BA731E6FC07E002905D4 /* AddServicesListViewController.swift in Sources */,
+				74A2BA741E6FC07E002905D4 /* ServiceDetailsViewController.swift in Sources */,
+				74A2BA751E6FC07E002905D4 /* AddEventViewController.swift in Sources */,
+				74A2BA761E6FC07E002905D4 /* URLRequestExtensions.swift in Sources */,
+				74A2BA771E6FC07E002905D4 /* ButtonWithImageView.swift in Sources */,
+				74A2BA781E6FC07E002905D4 /* ServicePreviewView.swift in Sources */,
+				74A2BA791E6FC07E002905D4 /* TextFieldWithImageView.swift in Sources */,
+				74A2BA701E6FC074002905D4 /* Service.swift in Sources */,
+				74A2BA711E6FC074002905D4 /* EventDetailsViewController.swift in Sources */,
+				74A2BA721E6FC074002905D4 /* CurrentServicesListViewController.swift in Sources */,
 				74670E251E5952E700EC0A3F /* MainTabBarController.swift in Sources */,
 				74670E261E5952E700EC0A3F /* EventListNavigationController.swift in Sources */,
 				74670E271E5952E700EC0A3F /* ProfileNavigationController.swift in Sources */,
@@ -543,6 +654,7 @@
 				749A7B061E5765B300548133 /* User.swift in Sources */,
 				749A7B051E5765A100548133 /* Event.swift in Sources */,
 				749A7B041E5763F200548133 /* EventTests.swift in Sources */,
+				74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

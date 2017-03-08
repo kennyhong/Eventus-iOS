@@ -33,6 +33,7 @@ public extension CGFloat {
 	
 	static let screenHeight: CGFloat = UIScreen.main.bounds.height
 	static let screenWidth: CGFloat = UIScreen.main.bounds.width
+	static let iconWidth: CGFloat = 25
 	static let borderWidth: CGFloat = 1.0 / UIScreen.main.scale
 	static let one: CGFloat = 1
 	static let zero: CGFloat = 0

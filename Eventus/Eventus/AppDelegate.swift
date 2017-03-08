@@ -8,7 +8,10 @@
 
 import UIKit
 
+let isTesting = ProcessInfo.processInfo.environment["isTest"] != nil ? true : false
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?

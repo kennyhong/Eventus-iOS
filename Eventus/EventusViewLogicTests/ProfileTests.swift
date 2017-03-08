@@ -16,6 +16,7 @@ class ProfileTests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
+		app.launchEnvironment = ["isTest":"true"]
         app.launch()
 		
 		wasLoggedIn = true
@@ -32,6 +33,7 @@ class ProfileTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
 		if !wasLoggedIn! {
+			app.tabBars.children(matching: .button).element(boundBy: 1).tap()
 			app.buttons["Logout"].tap()
 			app.alerts["Logout"].buttons["Logout"].tap()
 		}

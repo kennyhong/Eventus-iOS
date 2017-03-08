@@ -17,6 +17,7 @@ class LogoutTests: XCTestCase {
     override func setUp() {
         super.setUp()
         continueAfterFailure = false
+		app.launchEnvironment = ["isTest":"true"]
         app.launch()
 		
 		wasLoggedIn = false

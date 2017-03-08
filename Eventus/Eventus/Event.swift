@@ -10,19 +10,19 @@ import UIKit
 
 class Event: NSObject {
 	
+	var id: Int?
 	var name: String?
 	var eventDescription: String?
 	var date: String?
-	var services: [String]
 	
-	init(name: String? = nil,
+	init(id: Int? = nil,
+	     name: String? = nil,
 	     eventDescription: String? = nil,
-	     date: String? = nil,
-	     services: [String] = []) {
+	     date: String? = nil) {
 		
+		self.id = id
 		self.name = name
 		self.eventDescription = eventDescription
 		self.date = date
-		self.services = services
 	}
 }

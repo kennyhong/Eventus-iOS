@@ -10,7 +10,7 @@ import UIKit
 
 class Button: UIButton {
 	
-	fileprivate var shouldMakeParentTranslucentOnHighlight: Bool = false
+	var shouldMakeParentTranslucentOnHighlight: Bool = false
 	
 	init(withMargins margins: UIEdgeInsets? = nil) {
 		super.init(frame: .zero)
@@ -38,5 +38,15 @@ class Button: UIButton {
 				}
 			}
 		}
+	}
+	
+	func setIconImage(_ image: UIImage, withColor color: UIColor? = nil) {
+		if color != nil {
+			self.tintColor = color
+			self.setImage(image.withRenderingMode(.alwaysTemplate), for: .normal)
+		} else {
+			self.setImage(image, for: .normal)
+		}
+		self.frame = CGRect(x: 0, y: 0, width: .iconWidth, height: .iconWidth)
 	}
 }

@@ -1,11 +1,3 @@
-//
-//  Event.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-02-09.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import UIKit
 
 class Event: NSObject {

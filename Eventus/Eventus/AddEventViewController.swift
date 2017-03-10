@@ -1,11 +1,3 @@
-//
-//  AddEventViewController.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-03-07.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import UIKit
 
 protocol AddEventViewControllerDelegate {

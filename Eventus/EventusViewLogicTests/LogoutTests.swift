@@ -1,11 +1,3 @@
-//
-//  LogoutTests.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-02-19.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import XCTest
 
 class LogoutTests: XCTestCase {

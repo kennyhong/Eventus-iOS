@@ -1,11 +1,3 @@
-//
-//  EventListNavigationController.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-02-08.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import UIKit
 
 class EventListNavigationController: UINavigationController {

@@ -1,11 +1,3 @@
-//
-//  ServiceDetailsViewController.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-03-04.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import UIKit
 
 protocol ServiceDetailsViewControllerDelegate {

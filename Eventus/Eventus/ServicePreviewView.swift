@@ -1,11 +1,3 @@
-//
-//  ServicePreviewView.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-03-03.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import UIKit
 
 protocol ServicePreviewViewDelegate {

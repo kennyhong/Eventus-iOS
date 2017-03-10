@@ -1,11 +1,3 @@
-//
-//  LoginTests.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-02-18.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import XCTest
 
 class LoginTests: XCTestCase {
@@ -25,7 +17,7 @@ class LoginTests: XCTestCase {
 		tearDownShouldLogout = false
 		wasLoggedIn = false
 		
-//		Ensure logged out for testing
+		// Ensure logged out for testing
 		if app.navigationBars.count > 0 {
 			wasLoggedIn = true
 			app.tabBars.children(matching: .button).element(boundBy: 1).tap()

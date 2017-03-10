@@ -246,31 +246,149 @@
 			isa = PBXGroup;
 			children = (
 				74C204081E42803F00BC6D8D /* Models */,
+				74C203DF1E3BDD6B00BC6D8D /* Views */,
 				74C204101E4C299F00BC6D8D /* Controllers */,
 				74C203E01E3BDD7000BC6D8D /* Extensions */,
-				74C203DF1E3BDD6B00BC6D8D /* Views */,
+				7446EC821E7301EF00FA3A2A /* SupportingFiles */,
+			);
+			path = Eventus;
+			sourceTree = "<group>";
+		};
+		7446EC7F1E73007A00FA3A2A /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */,
+				7457CC271E708ABE003B2414 /* AddServicesTests.swift */,
+				7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */,
+			);
+			name = ServiceTests;
+			sourceTree = "<group>";
+		};
+		7446EC801E73008D00FA3A2A /* EventTests */ = {
+			isa = PBXGroup;
+			children = (
+				7457CC231E708337003B2414 /* EventDetailsTests.swift */,
+				74240FF81E706ED100DA67A4 /* AddEventTests.swift */,
+				743C77821E5C42B600F8FE2E /* EventListTests.swift */,
+			);
+			name = EventTests;
+			sourceTree = "<group>";
+		};
+		7446EC811E73009D00FA3A2A /* UserLifecycleTests */ = {
+			isa = PBXGroup;
+			children = (
+				743C77841E5C43CB00F8FE2E /* ProfileTests.swift */,
+				74670E0A1E594F4600EC0A3F /* LoginTests.swift */,
+				743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */,
+			);
+			name = UserLifecycleTests;
+			sourceTree = "<group>";
+		};
+		7446EC821E7301EF00FA3A2A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				743BD07C1E3BC9BA009CAEAF /* AppDelegate.swift */,
 				743BD0831E3BC9BA009CAEAF /* Assets.xcassets */,
 				743BD0881E3BC9BA009CAEAF /* Info.plist */,
 				743C777A1E5A597400F8FE2E /* Eventus.entitlements */,
 				748FCBFC1E676CC200EFE227 /* LaunchScreen.storyboard */,
 			);
-			path = Eventus;
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7446EC831E73024500FA3A2A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				74670E041E594EEC00EC0A3F /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7446EC841E73025000FA3A2A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				749A7AFD1E57636800548133 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		7446EC861E73037D00FA3A2A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */,
+				74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */,
+				74C204131E4C34C400BC6D8D /* ProfileViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7446EC871E73039100FA3A2A /* EventControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7446EC891E7303FB00FA3A2A /* NavigationControllers */,
+				7446EC881E7303C600FA3A2A /* ViewControllers */,
+			);
+			name = EventControllers;
+			sourceTree = "<group>";
+		};
+		7446EC881E7303C600FA3A2A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74A2BA621E6F8851002905D4 /* AddEventViewController.swift */,
+				7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */,
+				74C203FA1E4260C000BC6D8D /* EventListViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7446EC891E7303FB00FA3A2A /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C204151E4C361700BC6D8D /* EventListNavigationController.swift */,
+			);
+			name = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		7446EC8A1E73040A00FA3A2A /* UserLifeCycleControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7446EC8B1E73045600FA3A2A /* NavigationControllers */,
+				7446EC861E73037D00FA3A2A /* ViewControllers */,
+			);
+			name = UserLifeCycleControllers;
+			sourceTree = "<group>";
+		};
+		7446EC8B1E73045600FA3A2A /* NavigationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */,
+			);
+			name = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		7446EC8C1E73048800FA3A2A /* ServiceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C203DE1E3BDD6200BC6D8D /* ViewControllers */,
+			);
+			name = ServiceControllers;
+			sourceTree = "<group>";
+		};
+		7446EC8D1E7305C800FA3A2A /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */,
+			);
+			name = TabBarControllers;
 			sourceTree = "<group>";
 		};
 		74670E011E594EEC00EC0A3F /* EventusViewLogicTests */ = {
 			isa = PBXGroup;
 			children = (
-				74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */,
-				7457CC271E708ABE003B2414 /* AddServicesTests.swift */,
-				7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */,
-				7457CC231E708337003B2414 /* EventDetailsTests.swift */,
-				74240FF81E706ED100DA67A4 /* AddEventTests.swift */,
-				743C77841E5C43CB00F8FE2E /* ProfileTests.swift */,
-				743C77821E5C42B600F8FE2E /* EventListTests.swift */,
-				74670E0A1E594F4600EC0A3F /* LoginTests.swift */,
-				743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */,
-				74670E041E594EEC00EC0A3F /* Info.plist */,
+				7446EC811E73009D00FA3A2A /* UserLifecycleTests */,
+				7446EC801E73008D00FA3A2A /* EventTests */,
+				7446EC7F1E73007A00FA3A2A /* ServiceTests */,
+				7446EC831E73024500FA3A2A /* SupportingFiles */,
 			);
 			path = EventusViewLogicTests;
 			sourceTree = "<group>";
@@ -278,10 +396,10 @@
 		749A7AFA1E57636800548133 /* EventusUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */,
 				749A7B0A1E576CC000548133 /* UserTests.swift */,
+				74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */,
 				749A7B031E5763F200548133 /* EventTests.swift */,
-				749A7AFD1E57636800548133 /* Info.plist */,
+				7446EC841E73025000FA3A2A /* SupportingFiles */,
 			);
 			path = EventusUnitTests;
 			sourceTree = "<group>";
@@ -295,20 +413,14 @@
 			name = EventusTests;
 			sourceTree = "<group>";
 		};
-		74C203DE1E3BDD6200BC6D8D /* View Controllers */ = {
+		74C203DE1E3BDD6200BC6D8D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				74C203F51E3FD5BA00BC6D8D /* SplashViewController.swift */,
-				74C203F81E3FD6D700BC6D8D /* LoginViewController.swift */,
-				74C203FA1E4260C000BC6D8D /* EventListViewController.swift */,
-				74C204131E4C34C400BC6D8D /* ProfileViewController.swift */,
-				7412894F1E6A6A58008E0C58 /* EventDetailsViewController.swift */,
 				74B8E1271E6A781D004047EC /* CurrentServicesListViewController.swift */,
 				74B8E1291E6A7EA8004047EC /* AddServicesListViewController.swift */,
 				74B8E12F1E6A941C004047EC /* ServiceDetailsViewController.swift */,
-				74A2BA621E6F8851002905D4 /* AddEventViewController.swift */,
 			);
-			name = "View Controllers";
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		74C203DF1E3BDD6B00BC6D8D /* Views */ = {
@@ -379,10 +491,10 @@
 		74C204101E4C299F00BC6D8D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				74C204111E4C29AB00BC6D8D /* MainTabBarController.swift */,
-				74C204151E4C361700BC6D8D /* EventListNavigationController.swift */,
-				74C204171E4C362500BC6D8D /* ProfileNavigationController.swift */,
-				74C203DE1E3BDD6200BC6D8D /* View Controllers */,
+				7446EC8A1E73040A00FA3A2A /* UserLifeCycleControllers */,
+				7446EC8D1E7305C800FA3A2A /* TabBarControllers */,
+				7446EC871E73039100FA3A2A /* EventControllers */,
+				7446EC8C1E73048800FA3A2A /* ServiceControllers */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

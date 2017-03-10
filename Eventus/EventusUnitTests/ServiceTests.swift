@@ -1,11 +1,3 @@
-//
-//  ServiceTests.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-03-07.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import XCTest
 
 class ServiceTests: XCTestCase {

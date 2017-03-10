@@ -1,11 +1,3 @@
-//
-//  EventListTests.swift
-//  Eventus
-//
-//  Created by Kieran on 2017-02-21.
-//  Copyright © 2017 Kieran Cairney. All rights reserved.
-//
-
 import XCTest
 
 class EventListTests: XCTestCase {

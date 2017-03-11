@@ -62,8 +62,6 @@ class AddServicesListViewController: UIViewController {
 						let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
 						let services = json["data"] as? [[String: Any]] {
 						
-						self.rowData = []
-						
 						// TODO: remove this client side data manipulation when proper endpoint exists
 						self.queryAllServices() {
 							var currentlyAddedServiceIds: [Int] = []
@@ -97,6 +95,7 @@ class AddServicesListViewController: UIViewController {
 					let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
 					let services = json["data"] as? [[String: Any]] {
 					
+					self.rowData = []
 					for service in services {
 						self.rowData.append(Service(
 							id: service["id"] as? Int,

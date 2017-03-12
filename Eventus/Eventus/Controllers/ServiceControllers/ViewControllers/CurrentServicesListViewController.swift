@@ -106,12 +106,7 @@ extension CurrentServicesListViewController: ServicePreviewViewDelegate {
 extension CurrentServicesListViewController: ServiceDetailsViewControllerDelegate {
 	
 	func didDeleteService(withId serviceId: Int) {
-		for (i, service) in rowData.enumerated() {
-			if service.id == serviceId {
-				rowData.remove(at: i)
-				break
-			}
-		}
+		rowData = rowData.filter() { ($0 as Service).id != serviceId }
 		tableView.reloadData()
 	}
 	

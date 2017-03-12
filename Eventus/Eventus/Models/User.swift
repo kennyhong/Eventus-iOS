@@ -8,20 +8,20 @@ class User {
 	
 	var username: String? {
 		didSet {
-			UserDefaults(suiteName: "group.eventus")!.set(username, forKey: "username")
-			UserDefaults(suiteName: "group.eventus")!.synchronize()
+			UserDefaults.standard.set(username, forKey: "username")
+			UserDefaults.standard.synchronize()
 		}
 	}
 	
 	var isLoggedIn: Bool? {
 		didSet {
-			UserDefaults(suiteName: "group.eventus")!.set(isLoggedIn, forKey: "isLoggedIn")
-			UserDefaults(suiteName: "group.eventus")!.synchronize()
+			UserDefaults.standard.set(isLoggedIn, forKey: "isLoggedIn")
+			UserDefaults.standard.synchronize()
 		}
 	}
 	
 	func populateDefaults() {
-		username = UserDefaults(suiteName: "group.eventus")!.value(forKey: "username") as? String
-		isLoggedIn = UserDefaults(suiteName: "group.eventus")!.value(forKey: "isLoggedIn") as? Bool
+		username = UserDefaults.standard.value(forKey: "username") as? String
+		isLoggedIn = UserDefaults.standard.value(forKey: "isLoggedIn") as? Bool
 	}
 }

@@ -26,6 +26,79 @@
 		749AB93B1E73782200922892 /* TextFieldWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9321E73782200922892 /* TextFieldWithButtonView.swift */; };
 		749AB93C1E73782200922892 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9331E73782200922892 /* TextFieldWithImageView.swift */; };
 		749AB93D1E73782200922892 /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9341E73782200922892 /* VerticalSeparator.swift */; };
+		749AB93E1E74751C00922892 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C521E7323EE00930DA7 /* Event.swift */; };
+		749AB93F1E74751C00922892 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C531E7323EE00930DA7 /* Service.swift */; };
+		749AB9401E74751C00922892 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C541E7323EE00930DA7 /* User.swift */; };
+		749AB9411E74751C00922892 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92A1E73782200922892 /* Button.swift */; };
+		749AB9421E74751C00922892 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92C1E73782200922892 /* TextField.swift */; };
+		749AB9431E74751C00922892 /* ButtonWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92E1E73782200922892 /* ButtonWithImageView.swift */; };
+		749AB9441E74751C00922892 /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92F1E73782200922892 /* EventPreviewView.swift */; };
+		749AB9451E74751C00922892 /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9301E73782200922892 /* HorizontalSeparator.swift */; };
+		749AB9461E74751C00922892 /* ServicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9311E73782200922892 /* ServicePreviewView.swift */; };
+		749AB9471E74751C00922892 /* TextFieldWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9321E73782200922892 /* TextFieldWithButtonView.swift */; };
+		749AB9481E74751C00922892 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9331E73782200922892 /* TextFieldWithImageView.swift */; };
+		749AB9491E74751C00922892 /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9341E73782200922892 /* VerticalSeparator.swift */; };
+		749AB94A1E74751C00922892 /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8C1E73256400930DA7 /* EventListNavigationController.swift */; };
+		749AB94B1E74751C00922892 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* AddEventViewController.swift */; };
+		749AB94C1E74751C00922892 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */; };
+		749AB94D1E74751C00922892 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C901E73256400930DA7 /* EventListViewController.swift */; };
+		749AB94E1E74751C00922892 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C931E73256400930DA7 /* AddServicesListViewController.swift */; };
+		749AB94F1E74751C00922892 /* CurrentServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C941E73256400930DA7 /* CurrentServicesListViewController.swift */; };
+		749AB9501E74751C00922892 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C951E73256400930DA7 /* ServiceDetailsViewController.swift */; };
+		749AB9511E74751C00922892 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C971E73256400930DA7 /* MainTabBarController.swift */; };
+		749AB9521E74751C00922892 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9A1E73256400930DA7 /* ProfileNavigationController.swift */; };
+		749AB9531E74751C00922892 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9C1E73256400930DA7 /* LoginViewController.swift */; };
+		749AB9541E74751C00922892 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9D1E73256400930DA7 /* ProfileViewController.swift */; };
+		749AB9551E74751C00922892 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9E1E73256400930DA7 /* SplashViewController.swift */; };
+		749AB9561E74751C00922892 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C791E7324A600930DA7 /* CGFloatExtensions.swift */; };
+		749AB9571E74751C00922892 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7A1E7324A600930DA7 /* UIColorExtensions.swift */; };
+		749AB9581E74751C00922892 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7B1E7324A600930DA7 /* UIEdgeInsetsExtensions.swift */; };
+		749AB9591E74751C00922892 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7C1E7324A600930DA7 /* UILabelExtensions.swift */; };
+		749AB95A1E74751C00922892 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7D1E7324A600930DA7 /* UIStackViewExtensions.swift */; };
+		749AB95B1E74751C00922892 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7E1E7324A600930DA7 /* UIViewControllerExtensions.swift */; };
+		749AB95C1E74751C00922892 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7F1E7324A600930DA7 /* UIViewExtensions.swift */; };
+		749AB95D1E74751C00922892 /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C801E7324A600930DA7 /* URLRequestExtensions.swift */; };
+		749AB95E1E74751C00922892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C6F1E73248500930DA7 /* AppDelegate.swift */; };
+		749AB9621E74753B00922892 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C521E7323EE00930DA7 /* Event.swift */; };
+		749AB9631E74753B00922892 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C531E7323EE00930DA7 /* Service.swift */; };
+		749AB9641E74753B00922892 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C541E7323EE00930DA7 /* User.swift */; };
+		749AB9651E74753B00922892 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92A1E73782200922892 /* Button.swift */; };
+		749AB9661E74753B00922892 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92C1E73782200922892 /* TextField.swift */; };
+		749AB9671E74753B00922892 /* ButtonWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92E1E73782200922892 /* ButtonWithImageView.swift */; };
+		749AB9681E74753B00922892 /* EventPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92F1E73782200922892 /* EventPreviewView.swift */; };
+		749AB9691E74753B00922892 /* HorizontalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9301E73782200922892 /* HorizontalSeparator.swift */; };
+		749AB96A1E74753B00922892 /* ServicePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9311E73782200922892 /* ServicePreviewView.swift */; };
+		749AB96B1E74753B00922892 /* TextFieldWithButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9321E73782200922892 /* TextFieldWithButtonView.swift */; };
+		749AB96C1E74753B00922892 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9331E73782200922892 /* TextFieldWithImageView.swift */; };
+		749AB96D1E74753B00922892 /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9341E73782200922892 /* VerticalSeparator.swift */; };
+		749AB96E1E74753B00922892 /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8C1E73256400930DA7 /* EventListNavigationController.swift */; };
+		749AB96F1E74753B00922892 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* AddEventViewController.swift */; };
+		749AB9701E74753B00922892 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */; };
+		749AB9711E74753B00922892 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C901E73256400930DA7 /* EventListViewController.swift */; };
+		749AB9721E74753B00922892 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C931E73256400930DA7 /* AddServicesListViewController.swift */; };
+		749AB9731E74753B00922892 /* CurrentServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C941E73256400930DA7 /* CurrentServicesListViewController.swift */; };
+		749AB9741E74753B00922892 /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C951E73256400930DA7 /* ServiceDetailsViewController.swift */; };
+		749AB9751E74753B00922892 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C971E73256400930DA7 /* MainTabBarController.swift */; };
+		749AB9761E74753B00922892 /* ProfileNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9A1E73256400930DA7 /* ProfileNavigationController.swift */; };
+		749AB9771E74753B00922892 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9C1E73256400930DA7 /* LoginViewController.swift */; };
+		749AB9781E74753B00922892 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9D1E73256400930DA7 /* ProfileViewController.swift */; };
+		749AB9791E74753B00922892 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9E1E73256400930DA7 /* SplashViewController.swift */; };
+		749AB97A1E74753B00922892 /* CGFloatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C791E7324A600930DA7 /* CGFloatExtensions.swift */; };
+		749AB97B1E74754E00922892 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7A1E7324A600930DA7 /* UIColorExtensions.swift */; };
+		749AB97C1E74754E00922892 /* UIEdgeInsetsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7B1E7324A600930DA7 /* UIEdgeInsetsExtensions.swift */; };
+		749AB97D1E74754E00922892 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7C1E7324A600930DA7 /* UILabelExtensions.swift */; };
+		749AB97E1E74754E00922892 /* UIStackViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7D1E7324A600930DA7 /* UIStackViewExtensions.swift */; };
+		749AB97F1E74754E00922892 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7E1E7324A600930DA7 /* UIViewControllerExtensions.swift */; };
+		749AB9801E74754E00922892 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7F1E7324A600930DA7 /* UIViewExtensions.swift */; };
+		749AB9811E74754E00922892 /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C801E7324A600930DA7 /* URLRequestExtensions.swift */; };
+		749AB9821E74754E00922892 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C6F1E73248500930DA7 /* AppDelegate.swift */; };
+		749AB9831E74754E00922892 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C701E73248500930DA7 /* Assets.xcassets */; };
+		749AB9861E7475B600922892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C731E73248500930DA7 /* LaunchScreen.storyboard */; };
+		749AB9881E7475E600922892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C701E73248500930DA7 /* Assets.xcassets */; };
+		749AB98A1E7475E600922892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C721E73248500930DA7 /* Info.plist */; };
+		749AB98B1E74764800922892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C701E73248500930DA7 /* Assets.xcassets */; };
+		749AB98D1E74764800922892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C721E73248500930DA7 /* Info.plist */; };
+		749AB98E1E74764800922892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C731E73248500930DA7 /* LaunchScreen.storyboard */; };
 		74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */; };
 		74CEFD8D1E709A0B008D1F6C /* DeleteServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */; };
 		74D42C551E7323EE00930DA7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C521E7323EE00930DA7 /* Event.swift */; };
@@ -105,7 +178,6 @@
 		74D42C541E7323EE00930DA7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		74D42C6F1E73248500930DA7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74D42C701E73248500930DA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		74D42C711E73248500930DA7 /* Eventus.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Eventus.entitlements; sourceTree = "<group>"; };
 		74D42C721E73248500930DA7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74D42C731E73248500930DA7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74D42C791E7324A600930DA7 /* CGFloatExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtensions.swift; sourceTree = "<group>"; };
@@ -318,7 +390,6 @@
 			children = (
 				74D42C6F1E73248500930DA7 /* AppDelegate.swift */,
 				74D42C701E73248500930DA7 /* Assets.xcassets */,
-				74D42C711E73248500930DA7 /* Eventus.entitlements */,
 				74D42C721E73248500930DA7 /* Info.plist */,
 				74D42C731E73248500930DA7 /* LaunchScreen.storyboard */,
 			);
@@ -555,6 +626,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749AB9881E7475E600922892 /* Assets.xcassets in Resources */,
+				749AB98A1E7475E600922892 /* Info.plist in Resources */,
+				749AB9861E7475B600922892 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +636,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749AB98B1E74764800922892 /* Assets.xcassets in Resources */,
+				749AB98D1E74764800922892 /* Info.plist in Resources */,
+				749AB98E1E74764800922892 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +689,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749AB97B1E74754E00922892 /* UIColorExtensions.swift in Sources */,
+				749AB97C1E74754E00922892 /* UIEdgeInsetsExtensions.swift in Sources */,
+				749AB97D1E74754E00922892 /* UILabelExtensions.swift in Sources */,
+				749AB97E1E74754E00922892 /* UIStackViewExtensions.swift in Sources */,
+				749AB97F1E74754E00922892 /* UIViewControllerExtensions.swift in Sources */,
+				749AB9801E74754E00922892 /* UIViewExtensions.swift in Sources */,
+				749AB9811E74754E00922892 /* URLRequestExtensions.swift in Sources */,
+				749AB9821E74754E00922892 /* AppDelegate.swift in Sources */,
+				749AB9831E74754E00922892 /* Assets.xcassets in Sources */,
+				749AB9621E74753B00922892 /* Event.swift in Sources */,
+				749AB9631E74753B00922892 /* Service.swift in Sources */,
+				749AB9641E74753B00922892 /* User.swift in Sources */,
+				749AB9651E74753B00922892 /* Button.swift in Sources */,
+				749AB9661E74753B00922892 /* TextField.swift in Sources */,
+				749AB9671E74753B00922892 /* ButtonWithImageView.swift in Sources */,
+				749AB9681E74753B00922892 /* EventPreviewView.swift in Sources */,
+				749AB9691E74753B00922892 /* HorizontalSeparator.swift in Sources */,
+				749AB96A1E74753B00922892 /* ServicePreviewView.swift in Sources */,
+				749AB96B1E74753B00922892 /* TextFieldWithButtonView.swift in Sources */,
+				749AB96C1E74753B00922892 /* TextFieldWithImageView.swift in Sources */,
+				749AB96D1E74753B00922892 /* VerticalSeparator.swift in Sources */,
+				749AB96E1E74753B00922892 /* EventListNavigationController.swift in Sources */,
+				749AB96F1E74753B00922892 /* AddEventViewController.swift in Sources */,
+				749AB9701E74753B00922892 /* EventDetailsViewController.swift in Sources */,
+				749AB9711E74753B00922892 /* EventListViewController.swift in Sources */,
+				749AB9721E74753B00922892 /* AddServicesListViewController.swift in Sources */,
+				749AB9731E74753B00922892 /* CurrentServicesListViewController.swift in Sources */,
+				749AB9741E74753B00922892 /* ServiceDetailsViewController.swift in Sources */,
+				749AB9751E74753B00922892 /* MainTabBarController.swift in Sources */,
+				749AB9761E74753B00922892 /* ProfileNavigationController.swift in Sources */,
+				749AB9771E74753B00922892 /* LoginViewController.swift in Sources */,
+				749AB9781E74753B00922892 /* ProfileViewController.swift in Sources */,
+				749AB9791E74753B00922892 /* SplashViewController.swift in Sources */,
+				749AB97A1E74753B00922892 /* CGFloatExtensions.swift in Sources */,
 				7457CC281E708ABE003B2414 /* AddServicesTests.swift in Sources */,
 				743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */,
 				743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */,
@@ -628,6 +739,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749AB93E1E74751C00922892 /* Event.swift in Sources */,
+				749AB93F1E74751C00922892 /* Service.swift in Sources */,
+				749AB9401E74751C00922892 /* User.swift in Sources */,
+				749AB9411E74751C00922892 /* Button.swift in Sources */,
+				749AB9421E74751C00922892 /* TextField.swift in Sources */,
+				749AB9431E74751C00922892 /* ButtonWithImageView.swift in Sources */,
+				749AB9441E74751C00922892 /* EventPreviewView.swift in Sources */,
+				749AB9451E74751C00922892 /* HorizontalSeparator.swift in Sources */,
+				749AB9461E74751C00922892 /* ServicePreviewView.swift in Sources */,
+				749AB9471E74751C00922892 /* TextFieldWithButtonView.swift in Sources */,
+				749AB9481E74751C00922892 /* TextFieldWithImageView.swift in Sources */,
+				749AB9491E74751C00922892 /* VerticalSeparator.swift in Sources */,
+				749AB94A1E74751C00922892 /* EventListNavigationController.swift in Sources */,
+				749AB94B1E74751C00922892 /* AddEventViewController.swift in Sources */,
+				749AB94C1E74751C00922892 /* EventDetailsViewController.swift in Sources */,
+				749AB94D1E74751C00922892 /* EventListViewController.swift in Sources */,
+				749AB94E1E74751C00922892 /* AddServicesListViewController.swift in Sources */,
+				749AB94F1E74751C00922892 /* CurrentServicesListViewController.swift in Sources */,
+				749AB9501E74751C00922892 /* ServiceDetailsViewController.swift in Sources */,
+				749AB9511E74751C00922892 /* MainTabBarController.swift in Sources */,
+				749AB9521E74751C00922892 /* ProfileNavigationController.swift in Sources */,
+				749AB9531E74751C00922892 /* LoginViewController.swift in Sources */,
+				749AB9541E74751C00922892 /* ProfileViewController.swift in Sources */,
+				749AB9551E74751C00922892 /* SplashViewController.swift in Sources */,
+				749AB9561E74751C00922892 /* CGFloatExtensions.swift in Sources */,
+				749AB9571E74751C00922892 /* UIColorExtensions.swift in Sources */,
+				749AB9581E74751C00922892 /* UIEdgeInsetsExtensions.swift in Sources */,
+				749AB9591E74751C00922892 /* UILabelExtensions.swift in Sources */,
+				749AB95A1E74751C00922892 /* UIStackViewExtensions.swift in Sources */,
+				749AB95B1E74751C00922892 /* UIViewControllerExtensions.swift in Sources */,
+				749AB95C1E74751C00922892 /* UIViewExtensions.swift in Sources */,
+				749AB95D1E74751C00922892 /* URLRequestExtensions.swift in Sources */,
+				749AB95E1E74751C00922892 /* AppDelegate.swift in Sources */,
 				749A7B0B1E576CC000548133 /* UserTests.swift in Sources */,
 				749A7B041E5763F200548133 /* EventTests.swift in Sources */,
 				74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */,
@@ -747,7 +891,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Eventus/SupportingFiles/Eventus.entitlements;
 				DEVELOPMENT_TEAM = ZW62S74UAN;
 				INFOPLIST_FILE = Eventus/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -761,7 +904,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Eventus/SupportingFiles/Eventus.entitlements;
 				DEVELOPMENT_TEAM = ZW62S74UAN;
 				INFOPLIST_FILE = Eventus/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

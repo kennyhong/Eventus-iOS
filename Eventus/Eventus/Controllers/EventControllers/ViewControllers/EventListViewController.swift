@@ -111,12 +111,7 @@ extension EventListViewController: EventPreviewViewDelegate {
 extension EventListViewController: EventDetailsViewControllerDelegate {
 	
 	func didDeleteEvent(withId id: Int) {
-		for (i, event) in rowData.enumerated() {
-			if event.id == id {
-				rowData.remove(at: i)
-				break
-			}
-		}
+		rowData = rowData.filter() { ($0 as Event).id != id }
 		tableView.reloadData()
 	}
 }

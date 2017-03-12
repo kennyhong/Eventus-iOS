@@ -3,15 +3,20 @@ import XCTest
 class AddServicesTests: XCTestCase {
         
 	fileprivate let app = XCUIApplication()
-	fileprivate var wasLoggedIn: Bool?
 	
 	override func setUp() {
 		super.setUp()
 		continueAfterFailure = false
 		app.launchEnvironment = ["isTest":"true"]
 		app.launch()
-		
-		wasLoggedIn = true
+	}
+	
+	override func tearDown() {
+		super.tearDown()
+	}
+	
+	private func setup() -> Bool {
+		var wasLoggedIn = true
 		if app.navigationBars.count <= 0 {
 			wasLoggedIn = false
 			app.textFields["Username"].tap()
@@ -31,11 +36,11 @@ class AddServicesTests: XCTestCase {
 		app.tables.staticTexts["test-title"].tap()
 		let servicesButton = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .button).element
 		servicesButton.tap()
+		return wasLoggedIn
 	}
 	
-	override func tearDown() {
-		super.tearDown()
-		if !wasLoggedIn! {
+	private func teardown(_ wasLoggedIn: Bool) {
+		if !wasLoggedIn {
 			app.tabBars.children(matching: .button).element(boundBy: 1).tap()
 			app.buttons["Logout"].tap()
 			app.alerts["Logout"].buttons["Logout"].tap()
@@ -43,11 +48,13 @@ class AddServicesTests: XCTestCase {
 	}
 	
 	func testAddService() {
+		let wasLoggedIn = setup()
 		app.navigationBars["Current Services"].buttons["plus"].tap()
 		app.tables.staticTexts["test-add-service"].tap()
 		app.buttons["Add Service"].tap()
 		XCTAssertFalse(app.staticTexts["test-add-service"].exists)
 		app.navigationBars["Add Services"].buttons["Done"].tap()
 		XCTAssertTrue(app.staticTexts["test-add-service"].exists)
+		teardown(wasLoggedIn)
 	}
 }

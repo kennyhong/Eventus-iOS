@@ -15,7 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window.rootViewController = splashViewController
 		window.backgroundColor = .white
 		window.makeKeyAndVisible()
-		UserDefaults().addSuite(named: "group.eventus")
 		setupDefaultColors()
 		return true
 	}

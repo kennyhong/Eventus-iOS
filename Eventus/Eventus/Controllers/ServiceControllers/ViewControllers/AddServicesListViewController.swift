@@ -63,18 +63,18 @@ class AddServicesListViewController: UIViewController {
 						let services = json["data"] as? [[String: Any]] {
 						
 						// TODO: remove this client side data manipulation when proper endpoint exists
-						self.queryAllServices() {
+						self.queryAllServices() { allServices in
+							var allServicesCopy = allServices
 							var currentlyAddedServiceIds: [Int] = []
 							for service in services {
 								currentlyAddedServiceIds.append(service["id"] as! Int)
 							}
-							for (i, service) in self.rowData.enumerated() {
-								if currentlyAddedServiceIds.contains(service.id!) {
-									self.rowData.remove(at: i)
-								}
+							for id in currentlyAddedServiceIds {
+								allServicesCopy = allServicesCopy.filter() { ($0 as Service).id != id }
 							}
 							
 							DispatchQueue.main.async(){
+								self.rowData = allServicesCopy
 								self.tableView.reloadData()
 							}
 						}
@@ -87,7 +87,7 @@ class AddServicesListViewController: UIViewController {
 		}
 	}
 	
-	private func queryAllServices(completionHandler: @escaping () -> Void) {
+	private func queryAllServices(completionHandler: @escaping ([Service]) -> ()) {
 		let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/services")
 		let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
 			do {
@@ -95,15 +95,15 @@ class AddServicesListViewController: UIViewController {
 					let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
 					let services = json["data"] as? [[String: Any]] {
 					
-					self.rowData = []
+					var allServices: [Service] = []
 					for service in services {
-						self.rowData.append(Service(
+						allServices.append(Service(
 							id: service["id"] as? Int,
 							name: service["name"] as? String,
 							cost: service["cost"] as? Int)
 						);
-						completionHandler()
 					}
+					completionHandler(allServices)
 				}
 			} catch {
 				print("Error deserializing JSON: \(error)")
@@ -139,12 +139,7 @@ extension AddServicesListViewController: ServiceDetailsViewControllerDelegate {
 	}
 	
 	func didAddService(withId serviceId: Int) {
-		for (i, service) in self.rowData.enumerated() {
-			if service.id == serviceId {
-				rowData.remove(at: i)
-				break
-			}
-		}
+		rowData = rowData.filter() { ($0 as Service).id != serviceId }
 		tableView.reloadData()
 	}
 }

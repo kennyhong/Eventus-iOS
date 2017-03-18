@@ -6,6 +6,8 @@
 
 We cannot guarantee persistence of a state between setup() and teardown() due to the random de-allocation of variables on the heap. This is the reason for the additional setup and teardown functions that pass data through our test functions to limit duplicate code
 
+In order to run the view logic test suite at once, we must add the .plist file within the same level of the relative directory of the files involved. With that being said, this is the reason for the perhaps "messy" folder structure on GitHub/local project. Although when viewing within the Xcode IDE, the relative groups are split cleanly into folders. 
+
 Additionally, there exists an issue with Xcode where occasionally the test suite fails to perform a test causing it to fail. If this happens you may re-run the test suite as a whole, or re-run the specific test class to verify that the tests do not in fact fail. The error is as follows:
 
 The request was denied by service delegate (SBMainWorkspace) for reason: Busy ("Application "kierancairney.Eventus" is installing or uninstalling, and cannot be launched").

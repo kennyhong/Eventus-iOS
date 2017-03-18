@@ -18,6 +18,9 @@
 		7480FA7F1E7B6664003B771A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */; };
 		748349561E7C7D9B0036C951 /* InvoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349551E7C7D9B0036C951 /* InvoiceTests.swift */; };
 		748349591E7CC3A60036C951 /* ShareOnFacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349581E7CC3A60036C951 /* ShareOnFacebookTests.swift */; };
+		748349B81E7CEABF0036C951 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349B71E7CEABF0036C951 /* QrScannerViewController.swift */; };
+		748349B91E7CEAF10036C951 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349B71E7CEABF0036C951 /* QrScannerViewController.swift */; };
+		748349BA1E7CEAF60036C951 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349B71E7CEABF0036C951 /* QrScannerViewController.swift */; };
 		749A7B041E5763F200548133 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B031E5763F200548133 /* EventTests.swift */; };
 		749A7B0B1E576CC000548133 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B0A1E576CC000548133 /* UserTests.swift */; };
 		749AB9351E73782200922892 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92A1E73782200922892 /* Button.swift */; };
@@ -106,7 +109,6 @@
 		74BAD5951E7C3CF800EF2A0F /* TwoColumnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */; };
 		74BAD5961E7C3CF800EF2A0F /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
 		74BAD5971E7C3CF800EF2A0F /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
-		74BAD5981E7C3CF800EF2A0F /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */; };
 		74BAD5991E7C3CF800EF2A0F /* EventInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */; };
 		74BAD59A1E7C3CF800EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */; };
 		74BAD59B1E7C3CF800EF2A0F /* AttributeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */; };
@@ -115,7 +117,6 @@
 		74BAD59E1E7C3D0A00EF2A0F /* TwoColumnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */; };
 		74BAD59F1E7C3D0A00EF2A0F /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
 		74BAD5A01E7C3D0A00EF2A0F /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
-		74BAD5A11E7C3D0A00EF2A0F /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */; };
 		74BAD5A21E7C3D0A00EF2A0F /* EventInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */; };
 		74BAD5A31E7C3D0A00EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */; };
 		74BAD5A41E7C3D0A00EF2A0F /* AttributeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */; };
@@ -156,7 +157,6 @@
 		74EB74461E7B2554005AC19D /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74451E7B2554005AC19D /* UIImageExtensions.swift */; };
 		74EB74481E7B279C005AC19D /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
 		74EB744A1E7B31D9005AC19D /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
-		74EB744E1E7B36EF005AC19D /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +191,7 @@
 		7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		748349551E7C7D9B0036C951 /* InvoiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceTests.swift; sourceTree = "<group>"; };
 		748349581E7CC3A60036C951 /* ShareOnFacebookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareOnFacebookTests.swift; sourceTree = "<group>"; };
+		748349B71E7CEABF0036C951 /* QrScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QrScannerViewController.swift; path = QrCodeControllers/ViewControllers/QrScannerViewController.swift; sourceTree = "<group>"; };
 		749A7AF91E57636800548133 /* EventusUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventusUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A7AFD1E57636800548133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749A7B031E5763F200548133 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
@@ -241,7 +242,6 @@
 		74EB74451E7B2554005AC19D /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareToFacebookView.swift; sourceTree = "<group>"; };
 		74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoweredByEventusView.swift; sourceTree = "<group>"; };
-		74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -567,7 +567,7 @@
 		74EB744C1E7B36DA005AC19D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */,
+				748349B71E7CEABF0036C951 /* QrScannerViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -725,6 +725,7 @@
 				749AB9361E73782200922892 /* TextField.swift in Sources */,
 				749AB93B1E73782200922892 /* TextFieldWithButtonView.swift in Sources */,
 				749AB93C1E73782200922892 /* TextFieldWithImageView.swift in Sources */,
+				748349B81E7CEABF0036C951 /* QrScannerViewController.swift in Sources */,
 				74D42CA91E73256400930DA7 /* ProfileViewController.swift in Sources */,
 				74D42C831E7324A600930DA7 /* UIEdgeInsetsExtensions.swift in Sources */,
 				74D42CA31E73256400930DA7 /* AddServicesListViewController.swift in Sources */,
@@ -754,7 +755,6 @@
 				74D42C9F1E73256400930DA7 /* EventListNavigationController.swift in Sources */,
 				749AB93A1E73782200922892 /* ServicePreviewView.swift in Sources */,
 				7480FA7F1E7B6664003B771A /* DateFormatterExtensions.swift in Sources */,
-				74EB744E1E7B36EF005AC19D /* QrScannerViewController.swift in Sources */,
 				74D42C571E7323EE00930DA7 /* User.swift in Sources */,
 				74D42CAA1E73256400930DA7 /* SplashViewController.swift in Sources */,
 				749AB9381E73782200922892 /* EventPreviewView.swift in Sources */,
@@ -768,10 +768,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748349BA1E7CEAF60036C951 /* QrScannerViewController.swift in Sources */,
 				74BAD59E1E7C3D0A00EF2A0F /* TwoColumnListView.swift in Sources */,
 				74BAD59F1E7C3D0A00EF2A0F /* ShareToFacebookView.swift in Sources */,
 				74BAD5A01E7C3D0A00EF2A0F /* PoweredByEventusView.swift in Sources */,
-				74BAD5A11E7C3D0A00EF2A0F /* QrScannerViewController.swift in Sources */,
 				74BAD5A21E7C3D0A00EF2A0F /* EventInvoiceViewController.swift in Sources */,
 				748349561E7C7D9B0036C951 /* InvoiceTests.swift in Sources */,
 				74BAD5A31E7C3D0A00EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */,
@@ -830,10 +830,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				748349B91E7CEAF10036C951 /* QrScannerViewController.swift in Sources */,
 				74BAD5951E7C3CF800EF2A0F /* TwoColumnListView.swift in Sources */,
 				74BAD5961E7C3CF800EF2A0F /* ShareToFacebookView.swift in Sources */,
 				74BAD5971E7C3CF800EF2A0F /* PoweredByEventusView.swift in Sources */,
-				74BAD5981E7C3CF800EF2A0F /* QrScannerViewController.swift in Sources */,
 				74BAD5991E7C3CF800EF2A0F /* EventInvoiceViewController.swift in Sources */,
 				74BAD59A1E7C3CF800EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */,
 				74BAD59B1E7C3CF800EF2A0F /* AttributeExtensions.swift in Sources */,

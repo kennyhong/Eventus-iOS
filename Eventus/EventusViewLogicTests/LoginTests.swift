@@ -44,14 +44,13 @@ class LoginTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText(prevUsername!)
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 		}
 	}
     
     func testNoUserLoginButton1Attempt() {
 		let (wasLoggedIn, prevUsername) = setup()
 		app.buttons[">"].tap()
-		app.staticTexts["Eventus"].tap()
+		XCTAssertTrue(app.staticTexts["Eventus"].exists)
 		teardown(wasLoggedIn, false, prevUsername)
     }
 	
@@ -59,7 +58,7 @@ class LoginTests: XCTestCase {
 		let (wasLoggedIn, prevUsername) = setup()
 		app.textFields["Username"].tap()
 		app.keyboards.buttons["Go"].tap()
-		app.staticTexts["Eventus"].tap()
+		XCTAssertTrue(app.staticTexts["Eventus"].exists)
 		teardown(wasLoggedIn, false, prevUsername)
 	}
 	
@@ -77,7 +76,7 @@ class LoginTests: XCTestCase {
 		app.textFields["Username"].tap()
 		app.typeText("testuser1")
 		app.buttons[">"].tap()
-		app.navigationBars["Events"].staticTexts["Events"].tap()
+		XCTAssertTrue(app.navigationBars["Events"].staticTexts["Events"].exists)
 		teardown(wasLoggedIn, true, prevUsername)
 	}
 	
@@ -86,7 +85,7 @@ class LoginTests: XCTestCase {
 		app.textFields["Username"].tap()
 		app.typeText("testuser2")
 		app.keyboards.buttons["Go"].tap()
-		app.navigationBars["Events"].staticTexts["Events"].tap()
+		XCTAssertTrue(app.navigationBars["Events"].staticTexts["Events"].exists)
 		teardown(wasLoggedIn, true, prevUsername)
 	}
 }

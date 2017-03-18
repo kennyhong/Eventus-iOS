@@ -68,7 +68,7 @@ public extension UIView {
 	
 	func pinInsideBottomOf(view: UIView, constant: CGFloat = 0) {
 		NSLayoutConstraint.activate([
-			bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: constant)
+			bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -constant)
 		])
 	}
 	

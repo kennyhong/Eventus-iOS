@@ -2,21 +2,21 @@ import UIKit
 
 protocol ServiceDetailsViewControllerDelegate {
 	func didDeleteService(withId serviceId: Int)
-	func didAddService(withId serviceId: Int)
+	func didAddService(_ service: Service)
 }
 
 class ServiceDetailsViewController: UIViewController {
 	
 	fileprivate let eventId: Int
-	fileprivate let serviceId: Int
+	fileprivate let service: Service
 	fileprivate let isTiedToEvent: Bool
 	fileprivate let addServiceButton = Button(withMargins: UIEdgeInsets(horizontal: .large, vertical: .medium + .small))
 	fileprivate let deleteServiceButton = Button(withMargins: UIEdgeInsets(horizontal: .large, vertical: .medium + .small))
 	var delegate: ServiceDetailsViewControllerDelegate?
 	
-	init(eventId eID: Int, serviceId sID: Int, isTiedToEvent: Bool) {
+	init(eventId eID: Int, service: Service, isTiedToEvent: Bool) {
 		eventId = eID
-		serviceId = sID
+		self.service = service
 		self.isTiedToEvent = isTiedToEvent
 		super.init(nibName: nil, bundle: nil)
 		setup()
@@ -59,12 +59,12 @@ class ServiceDetailsViewController: UIViewController {
 	
 	@objc private func didTapAddService() {
 		if !isTesting {
-			request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.serviceId)", requestType: "POST") { response in
+			request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.service.id!)", requestType: "POST") { response in
 				
 				print("response = \(response)")
 			}
 		}
-		self.delegate?.didAddService(withId: self.serviceId)
+		self.delegate?.didAddService(service)
 		_ = self.navigationController?.popViewController(animated: true)
 	}
 	
@@ -72,13 +72,13 @@ class ServiceDetailsViewController: UIViewController {
 		let alertController = UIAlertController(title: "Remove Service", message: "Are you sure you want to remove this service?", preferredStyle: .alert)
 		alertController.addAction(UIAlertAction(title: "Remove", style: .destructive, handler: { (alert: UIAlertAction) -> Void in
 			if !isTesting {
-				self.request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.serviceId)", requestType: "DELETE") { response in
+				self.request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.service.id!)", requestType: "DELETE") { response in
 					
 					print("response = \(response)")
 				}
 			}
 			self.dismiss(animated: true, completion: nil)
-			self.delegate?.didDeleteService(withId: self.serviceId)
+			self.delegate?.didDeleteService(withId: self.service.id!)
 			_ = self.navigationController?.popViewController(animated: true)
 		}))
 		alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))

@@ -22,7 +22,6 @@ class ProfileTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText("testuser1")
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 			app.tabBars.children(matching: .button).element(boundBy: 1).tap()
 		}
 		return wasLoggedIn
@@ -41,4 +40,11 @@ class ProfileTests: XCTestCase {
 		XCTAssertNotNil(app.buttons["Logout"])
 		teardown(wasLoggedIn)
     }
+	
+	func testQrCodeButtonExists() {
+		let wasLoggedIn = setup()
+		let button = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .button).element
+		XCTAssertNotNil(button)
+		teardown(wasLoggedIn)
+	}
 }

@@ -22,7 +22,6 @@ class AddEventTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText("testuser1")
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 		}
 		return wasLoggedIn
 	}
@@ -41,7 +40,7 @@ class AddEventTests: XCTestCase {
 		app.textFields["Description"].tap()
 		app.textFields["Description"].typeText("test-description")
 		app.buttons["Next:"].tap()
-		app.pickerWheels["2017"].adjust(toPickerWheelValue: "2018")
+		app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "2018")
 		app.navigationBars["Add Event"].buttons["Save"].tap()
 		app.alerts["Incomplete Event"].buttons["Continue"].tap()
 		teardown(wasLoggedIn)
@@ -55,7 +54,7 @@ class AddEventTests: XCTestCase {
 		app.buttons["Next:"].tap()
 		app.textFields["Description"].typeText("test-description")
 		app.buttons["Next:"].tap()
-		app.pickerWheels["2017"].adjust(toPickerWheelValue: "2018")
+		app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "2018")
 		app.navigationBars["Add Event"].buttons["Save"].tap()
 		app.tables.staticTexts["test-title"].tap()
 		app.navigationBars["Event Details"].buttons["Events"].tap()

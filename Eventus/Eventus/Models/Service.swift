@@ -4,11 +4,11 @@ class Service: NSObject {
 	
 	var id: Int?
 	var name: String?
-	var cost: Int?
+	var cost: Double?
 	
 	init(id: Int? = nil,
 	     name: String? = nil,
-	     cost: Int? = nil) {
+	     cost: Double? = nil) {
 		
 		self.id = id
 		self.name = name

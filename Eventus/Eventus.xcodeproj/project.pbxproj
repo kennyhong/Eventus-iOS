@@ -15,6 +15,9 @@
 		7457CC261E708AB3003B2414 /* CurrentServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */; };
 		7457CC281E708ABE003B2414 /* AddServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7457CC271E708ABE003B2414 /* AddServicesTests.swift */; };
 		74670E0B1E594F4600EC0A3F /* LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74670E0A1E594F4600EC0A3F /* LoginTests.swift */; };
+		7480FA7F1E7B6664003B771A /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */; };
+		748349561E7C7D9B0036C951 /* InvoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349551E7C7D9B0036C951 /* InvoiceTests.swift */; };
+		748349591E7CC3A60036C951 /* ShareOnFacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748349581E7CC3A60036C951 /* ShareOnFacebookTests.swift */; };
 		749A7B041E5763F200548133 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B031E5763F200548133 /* EventTests.swift */; };
 		749A7B0B1E576CC000548133 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749A7B0A1E576CC000548133 /* UserTests.swift */; };
 		749AB9351E73782200922892 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB92A1E73782200922892 /* Button.swift */; };
@@ -39,7 +42,7 @@
 		749AB9481E74751C00922892 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9331E73782200922892 /* TextFieldWithImageView.swift */; };
 		749AB9491E74751C00922892 /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9341E73782200922892 /* VerticalSeparator.swift */; };
 		749AB94A1E74751C00922892 /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8C1E73256400930DA7 /* EventListNavigationController.swift */; };
-		749AB94B1E74751C00922892 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* AddEventViewController.swift */; };
+		749AB94B1E74751C00922892 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* CreateEventViewController.swift */; };
 		749AB94C1E74751C00922892 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */; };
 		749AB94D1E74751C00922892 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C901E73256400930DA7 /* EventListViewController.swift */; };
 		749AB94E1E74751C00922892 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C931E73256400930DA7 /* AddServicesListViewController.swift */; };
@@ -72,7 +75,7 @@
 		749AB96C1E74753B00922892 /* TextFieldWithImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9331E73782200922892 /* TextFieldWithImageView.swift */; };
 		749AB96D1E74753B00922892 /* VerticalSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749AB9341E73782200922892 /* VerticalSeparator.swift */; };
 		749AB96E1E74753B00922892 /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8C1E73256400930DA7 /* EventListNavigationController.swift */; };
-		749AB96F1E74753B00922892 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* AddEventViewController.swift */; };
+		749AB96F1E74753B00922892 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* CreateEventViewController.swift */; };
 		749AB9701E74753B00922892 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */; };
 		749AB9711E74753B00922892 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C901E73256400930DA7 /* EventListViewController.swift */; };
 		749AB9721E74753B00922892 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C931E73256400930DA7 /* AddServicesListViewController.swift */; };
@@ -100,6 +103,25 @@
 		749AB98D1E74764800922892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C721E73248500930DA7 /* Info.plist */; };
 		749AB98E1E74764800922892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C731E73248500930DA7 /* LaunchScreen.storyboard */; };
 		74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */; };
+		74BAD5951E7C3CF800EF2A0F /* TwoColumnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */; };
+		74BAD5961E7C3CF800EF2A0F /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
+		74BAD5971E7C3CF800EF2A0F /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
+		74BAD5981E7C3CF800EF2A0F /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */; };
+		74BAD5991E7C3CF800EF2A0F /* EventInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */; };
+		74BAD59A1E7C3CF800EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */; };
+		74BAD59B1E7C3CF800EF2A0F /* AttributeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */; };
+		74BAD59C1E7C3CF800EF2A0F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74451E7B2554005AC19D /* UIImageExtensions.swift */; };
+		74BAD59D1E7C3CF800EF2A0F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */; };
+		74BAD59E1E7C3D0A00EF2A0F /* TwoColumnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */; };
+		74BAD59F1E7C3D0A00EF2A0F /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
+		74BAD5A01E7C3D0A00EF2A0F /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
+		74BAD5A11E7C3D0A00EF2A0F /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */; };
+		74BAD5A21E7C3D0A00EF2A0F /* EventInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */; };
+		74BAD5A31E7C3D0A00EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */; };
+		74BAD5A41E7C3D0A00EF2A0F /* AttributeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */; };
+		74BAD5A51E7C3D0A00EF2A0F /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74451E7B2554005AC19D /* UIImageExtensions.swift */; };
+		74BAD5A61E7C3D0A00EF2A0F /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */; };
+		74BAD5AA1E7C5E1100EF2A0F /* EditEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BAD5A91E7C5E1100EF2A0F /* EditEventTests.swift */; };
 		74CEFD8D1E709A0B008D1F6C /* DeleteServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */; };
 		74D42C551E7323EE00930DA7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C521E7323EE00930DA7 /* Event.swift */; };
 		74D42C561E7323EE00930DA7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C531E7323EE00930DA7 /* Service.swift */; };
@@ -116,7 +138,7 @@
 		74D42C871E7324A600930DA7 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C7F1E7324A600930DA7 /* UIViewExtensions.swift */; };
 		74D42C881E7324A600930DA7 /* URLRequestExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C801E7324A600930DA7 /* URLRequestExtensions.swift */; };
 		74D42C9F1E73256400930DA7 /* EventListNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8C1E73256400930DA7 /* EventListNavigationController.swift */; };
-		74D42CA01E73256400930DA7 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* AddEventViewController.swift */; };
+		74D42CA01E73256400930DA7 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8E1E73256400930DA7 /* CreateEventViewController.swift */; };
 		74D42CA11E73256400930DA7 /* EventDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */; };
 		74D42CA21E73256400930DA7 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C901E73256400930DA7 /* EventListViewController.swift */; };
 		74D42CA31E73256400930DA7 /* AddServicesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C931E73256400930DA7 /* AddServicesListViewController.swift */; };
@@ -127,6 +149,14 @@
 		74D42CA81E73256400930DA7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9C1E73256400930DA7 /* LoginViewController.swift */; };
 		74D42CA91E73256400930DA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9D1E73256400930DA7 /* ProfileViewController.swift */; };
 		74D42CAA1E73256400930DA7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D42C9E1E73256400930DA7 /* SplashViewController.swift */; };
+		74D8E5231E79B8790066C5C0 /* EventInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */; };
+		74D8E5271E79B9CB0066C5C0 /* TwoColumnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */; };
+		74D8E5291E79D5DB0066C5C0 /* AttributeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */; };
+		74EB74441E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */; };
+		74EB74461E7B2554005AC19D /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74451E7B2554005AC19D /* UIImageExtensions.swift */; };
+		74EB74481E7B279C005AC19D /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
+		74EB744A1E7B31D9005AC19D /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
+		74EB744E1E7B36EF005AC19D /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,6 +188,9 @@
 		74670E001E594EEC00EC0A3F /* EventusViewLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventusViewLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74670E041E594EEC00EC0A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74670E0A1E594F4600EC0A3F /* LoginTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTests.swift; sourceTree = "<group>"; };
+		7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		748349551E7C7D9B0036C951 /* InvoiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvoiceTests.swift; sourceTree = "<group>"; };
+		748349581E7CC3A60036C951 /* ShareOnFacebookTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareOnFacebookTests.swift; sourceTree = "<group>"; };
 		749A7AF91E57636800548133 /* EventusUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventusUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749A7AFD1E57636800548133 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749A7B031E5763F200548133 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTests.swift; sourceTree = "<group>"; };
@@ -172,6 +205,7 @@
 		749AB9331E73782200922892 /* TextFieldWithImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithImageView.swift; sourceTree = "<group>"; };
 		749AB9341E73782200922892 /* VerticalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSeparator.swift; sourceTree = "<group>"; };
 		74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		74BAD5A91E7C5E1100EF2A0F /* EditEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventTests.swift; sourceTree = "<group>"; };
 		74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteServicesTests.swift; sourceTree = "<group>"; };
 		74D42C521E7323EE00930DA7 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		74D42C531E7323EE00930DA7 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -189,7 +223,7 @@
 		74D42C7F1E7324A600930DA7 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		74D42C801E7324A600930DA7 /* URLRequestExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestExtensions.swift; sourceTree = "<group>"; };
 		74D42C8C1E73256400930DA7 /* EventListNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListNavigationController.swift; sourceTree = "<group>"; };
-		74D42C8E1E73256400930DA7 /* AddEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
+		74D42C8E1E73256400930DA7 /* CreateEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailsViewController.swift; sourceTree = "<group>"; };
 		74D42C901E73256400930DA7 /* EventListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		74D42C931E73256400930DA7 /* AddServicesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddServicesListViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +234,14 @@
 		74D42C9C1E73256400930DA7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		74D42C9D1E73256400930DA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		74D42C9E1E73256400930DA7 /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventInvoiceViewController.swift; sourceTree = "<group>"; };
+		74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoColumnListView.swift; sourceTree = "<group>"; };
+		74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributeExtensions.swift; sourceTree = "<group>"; };
+		74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareEventOnFacebookViewController.swift; sourceTree = "<group>"; };
+		74EB74451E7B2554005AC19D /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareToFacebookView.swift; sourceTree = "<group>"; };
+		74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoweredByEventusView.swift; sourceTree = "<group>"; };
+		74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +313,9 @@
 		7446EC801E73008D00FA3A2A /* EventTests */ = {
 			isa = PBXGroup;
 			children = (
+				748349551E7C7D9B0036C951 /* InvoiceTests.swift */,
+				748349581E7CC3A60036C951 /* ShareOnFacebookTests.swift */,
+				74BAD5A91E7C5E1100EF2A0F /* EditEventTests.swift */,
 				7457CC231E708337003B2414 /* EventDetailsTests.swift */,
 				74240FF81E706ED100DA67A4 /* AddEventTests.swift */,
 				743C77821E5C42B600F8FE2E /* EventListTests.swift */,
@@ -371,6 +416,9 @@
 				749AB9321E73782200922892 /* TextFieldWithButtonView.swift */,
 				749AB9331E73782200922892 /* TextFieldWithImageView.swift */,
 				749AB9341E73782200922892 /* VerticalSeparator.swift */,
+				74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */,
+				74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */,
+				74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */,
 			);
 			path = UIViews;
 			sourceTree = "<group>";
@@ -407,6 +455,9 @@
 				74D42C7E1E7324A600930DA7 /* UIViewControllerExtensions.swift */,
 				74D42C7F1E7324A600930DA7 /* UIViewExtensions.swift */,
 				74D42C801E7324A600930DA7 /* URLRequestExtensions.swift */,
+				74D8E5281E79D5DB0066C5C0 /* AttributeExtensions.swift */,
+				74EB74451E7B2554005AC19D /* UIImageExtensions.swift */,
+				7480FA7E1E7B6664003B771A /* DateFormatterExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -414,6 +465,7 @@
 		74D42C891E73256400930DA7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				74EB744B1E7B36CF005AC19D /* QrCodeControllers */,
 				74D42C8A1E73256400930DA7 /* EventControllers */,
 				74D42C911E73256400930DA7 /* ServiceControllers */,
 				74D42C961E73256400930DA7 /* TabBarControllers */,
@@ -442,9 +494,11 @@
 		74D42C8D1E73256400930DA7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				74D42C8E1E73256400930DA7 /* AddEventViewController.swift */,
+				74D42C8E1E73256400930DA7 /* CreateEventViewController.swift */,
 				74D42C8F1E73256400930DA7 /* EventDetailsViewController.swift */,
 				74D42C901E73256400930DA7 /* EventListViewController.swift */,
+				74D8E5221E79B8790066C5C0 /* EventInvoiceViewController.swift */,
+				74EB74431E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -500,6 +554,22 @@
 				74D42C9E1E73256400930DA7 /* SplashViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		74EB744B1E7B36CF005AC19D /* QrCodeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74EB744C1E7B36DA005AC19D /* ViewControllers */,
+			);
+			name = QrCodeControllers;
+			sourceTree = "<group>";
+		};
+		74EB744C1E7B36DA005AC19D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				74EB744D1E7B36EF005AC19D /* QrScannerViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,6 +719,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D8E5291E79D5DB0066C5C0 /* AttributeExtensions.swift in Sources */,
 				74D42CA71E73256400930DA7 /* ProfileNavigationController.swift in Sources */,
 				74D42CA41E73256400930DA7 /* CurrentServicesListViewController.swift in Sources */,
 				749AB9361E73782200922892 /* TextField.swift in Sources */,
@@ -659,23 +730,31 @@
 				74D42CA31E73256400930DA7 /* AddServicesListViewController.swift in Sources */,
 				74D42C551E7323EE00930DA7 /* Event.swift in Sources */,
 				74D42C851E7324A600930DA7 /* UIStackViewExtensions.swift in Sources */,
-				74D42CA01E73256400930DA7 /* AddEventViewController.swift in Sources */,
+				74D42CA01E73256400930DA7 /* CreateEventViewController.swift in Sources */,
 				749AB93D1E73782200922892 /* VerticalSeparator.swift in Sources */,
 				74D42CA51E73256400930DA7 /* ServiceDetailsViewController.swift in Sources */,
 				74D42C861E7324A600930DA7 /* UIViewControllerExtensions.swift in Sources */,
+				74EB74481E7B279C005AC19D /* ShareToFacebookView.swift in Sources */,
+				74D8E5231E79B8790066C5C0 /* EventInvoiceViewController.swift in Sources */,
 				74D42C841E7324A600930DA7 /* UILabelExtensions.swift in Sources */,
 				74D42C561E7323EE00930DA7 /* Service.swift in Sources */,
+				74EB744A1E7B31D9005AC19D /* PoweredByEventusView.swift in Sources */,
 				74D42C881E7324A600930DA7 /* URLRequestExtensions.swift in Sources */,
 				74D42C871E7324A600930DA7 /* UIViewExtensions.swift in Sources */,
 				74D42CA11E73256400930DA7 /* EventDetailsViewController.swift in Sources */,
+				74EB74461E7B2554005AC19D /* UIImageExtensions.swift in Sources */,
+				74EB74441E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift in Sources */,
 				74D42CA61E73256400930DA7 /* MainTabBarController.swift in Sources */,
 				74D42C811E7324A600930DA7 /* CGFloatExtensions.swift in Sources */,
 				74D42CA81E73256400930DA7 /* LoginViewController.swift in Sources */,
+				74D8E5271E79B9CB0066C5C0 /* TwoColumnListView.swift in Sources */,
 				749AB9371E73782200922892 /* ButtonWithImageView.swift in Sources */,
 				749AB9391E73782200922892 /* HorizontalSeparator.swift in Sources */,
 				74D42C821E7324A600930DA7 /* UIColorExtensions.swift in Sources */,
 				74D42C9F1E73256400930DA7 /* EventListNavigationController.swift in Sources */,
 				749AB93A1E73782200922892 /* ServicePreviewView.swift in Sources */,
+				7480FA7F1E7B6664003B771A /* DateFormatterExtensions.swift in Sources */,
+				74EB744E1E7B36EF005AC19D /* QrScannerViewController.swift in Sources */,
 				74D42C571E7323EE00930DA7 /* User.swift in Sources */,
 				74D42CAA1E73256400930DA7 /* SplashViewController.swift in Sources */,
 				749AB9381E73782200922892 /* EventPreviewView.swift in Sources */,
@@ -689,6 +768,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BAD59E1E7C3D0A00EF2A0F /* TwoColumnListView.swift in Sources */,
+				74BAD59F1E7C3D0A00EF2A0F /* ShareToFacebookView.swift in Sources */,
+				74BAD5A01E7C3D0A00EF2A0F /* PoweredByEventusView.swift in Sources */,
+				74BAD5A11E7C3D0A00EF2A0F /* QrScannerViewController.swift in Sources */,
+				74BAD5A21E7C3D0A00EF2A0F /* EventInvoiceViewController.swift in Sources */,
+				748349561E7C7D9B0036C951 /* InvoiceTests.swift in Sources */,
+				74BAD5A31E7C3D0A00EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */,
+				74BAD5A41E7C3D0A00EF2A0F /* AttributeExtensions.swift in Sources */,
+				74BAD5A51E7C3D0A00EF2A0F /* UIImageExtensions.swift in Sources */,
+				74BAD5A61E7C3D0A00EF2A0F /* DateFormatterExtensions.swift in Sources */,
 				749AB97B1E74754E00922892 /* UIColorExtensions.swift in Sources */,
 				749AB97C1E74754E00922892 /* UIEdgeInsetsExtensions.swift in Sources */,
 				749AB97D1E74754E00922892 /* UILabelExtensions.swift in Sources */,
@@ -711,10 +800,11 @@
 				749AB96C1E74753B00922892 /* TextFieldWithImageView.swift in Sources */,
 				749AB96D1E74753B00922892 /* VerticalSeparator.swift in Sources */,
 				749AB96E1E74753B00922892 /* EventListNavigationController.swift in Sources */,
-				749AB96F1E74753B00922892 /* AddEventViewController.swift in Sources */,
+				749AB96F1E74753B00922892 /* CreateEventViewController.swift in Sources */,
 				749AB9701E74753B00922892 /* EventDetailsViewController.swift in Sources */,
 				749AB9711E74753B00922892 /* EventListViewController.swift in Sources */,
 				749AB9721E74753B00922892 /* AddServicesListViewController.swift in Sources */,
+				748349591E7CC3A60036C951 /* ShareOnFacebookTests.swift in Sources */,
 				749AB9731E74753B00922892 /* CurrentServicesListViewController.swift in Sources */,
 				749AB9741E74753B00922892 /* ServiceDetailsViewController.swift in Sources */,
 				749AB9751E74753B00922892 /* MainTabBarController.swift in Sources */,
@@ -729,6 +819,7 @@
 				74240FF91E706ED100DA67A4 /* AddEventTests.swift in Sources */,
 				743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */,
 				74CEFD8D1E709A0B008D1F6C /* DeleteServicesTests.swift in Sources */,
+				74BAD5AA1E7C5E1100EF2A0F /* EditEventTests.swift in Sources */,
 				7457CC241E708337003B2414 /* EventDetailsTests.swift in Sources */,
 				7457CC261E708AB3003B2414 /* CurrentServicesTests.swift in Sources */,
 				74670E0B1E594F4600EC0A3F /* LoginTests.swift in Sources */,
@@ -739,6 +830,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74BAD5951E7C3CF800EF2A0F /* TwoColumnListView.swift in Sources */,
+				74BAD5961E7C3CF800EF2A0F /* ShareToFacebookView.swift in Sources */,
+				74BAD5971E7C3CF800EF2A0F /* PoweredByEventusView.swift in Sources */,
+				74BAD5981E7C3CF800EF2A0F /* QrScannerViewController.swift in Sources */,
+				74BAD5991E7C3CF800EF2A0F /* EventInvoiceViewController.swift in Sources */,
+				74BAD59A1E7C3CF800EF2A0F /* ShareEventOnFacebookViewController.swift in Sources */,
+				74BAD59B1E7C3CF800EF2A0F /* AttributeExtensions.swift in Sources */,
+				74BAD59C1E7C3CF800EF2A0F /* UIImageExtensions.swift in Sources */,
+				74BAD59D1E7C3CF800EF2A0F /* DateFormatterExtensions.swift in Sources */,
 				749AB93E1E74751C00922892 /* Event.swift in Sources */,
 				749AB93F1E74751C00922892 /* Service.swift in Sources */,
 				749AB9401E74751C00922892 /* User.swift in Sources */,
@@ -752,7 +852,7 @@
 				749AB9481E74751C00922892 /* TextFieldWithImageView.swift in Sources */,
 				749AB9491E74751C00922892 /* VerticalSeparator.swift in Sources */,
 				749AB94A1E74751C00922892 /* EventListNavigationController.swift in Sources */,
-				749AB94B1E74751C00922892 /* AddEventViewController.swift in Sources */,
+				749AB94B1E74751C00922892 /* CreateEventViewController.swift in Sources */,
 				749AB94C1E74751C00922892 /* EventDetailsViewController.swift in Sources */,
 				749AB94D1E74751C00922892 /* EventListViewController.swift in Sources */,
 				749AB94E1E74751C00922892 /* AddServicesListViewController.swift in Sources */,

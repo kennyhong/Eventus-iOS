@@ -1,7 +1,7 @@
 import UIKit
 
 protocol EventPreviewViewDelegate {
-	func didTouchEventPreviewView(withEventId id: Int)
+	func didTouchEventPreviewView(withEvent event: Event)
 }
 
 class EventPreviewView: UIView, UIGestureRecognizerDelegate {
@@ -22,24 +22,18 @@ class EventPreviewView: UIView, UIGestureRecognizerDelegate {
 		fatalError("init(coder:) has not been implemented")
 	}
 	
-	var name: String? {
+	var event: Event? {
 		didSet {
-			nameLabel.text = name
-			nameLabel.isHidden = name == nil
-		}
-	}
-	
-	var eventDescription: String? {
-		didSet {
-			eventDescriptionLabel.text = eventDescription
-			eventDescriptionLabel.isHidden = eventDescription == nil
-		}
-	}
-	
-	var date: String? {
-		didSet {
-			dateLabel.text = date
-			dateLabel.isHidden = date == nil
+			guard let event = event else { return }
+			
+			nameLabel.text = event.name
+			nameLabel.isHidden = event.name == nil
+			
+			eventDescriptionLabel.text = event.eventDescription
+			eventDescriptionLabel.isHidden = event.eventDescription == nil
+			
+			dateLabel.text = event.date
+			dateLabel.isHidden = event.date == nil
 		}
 	}
 	
@@ -78,7 +72,6 @@ class EventPreviewView: UIView, UIGestureRecognizerDelegate {
 	}
 	
 	@objc private func didTouchEventPreviewView() {
-		guard let id = id else { fatalError("event has no associated id") }
-		delegate?.didTouchEventPreviewView(withEventId: id)
+		delegate?.didTouchEventPreviewView(withEvent: event!)
 	}
 }

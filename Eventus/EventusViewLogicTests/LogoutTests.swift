@@ -29,7 +29,6 @@ class LogoutTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText("testuser1")
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 			app.tabBars.children(matching: .button).element(boundBy: 1).tap()
 		}
 		
@@ -41,7 +40,6 @@ class LogoutTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText(prevUsername!)
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 		}
 	}
     

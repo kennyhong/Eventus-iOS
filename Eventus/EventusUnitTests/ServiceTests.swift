@@ -18,23 +18,23 @@ class ServiceTests: XCTestCase {
 	}
 	
 	func testPartialParameterConstructor() {
-		let service = Service(name: "name-test", cost: 100)
+		let service = Service(name: "name-test", cost: 100.5)
 		XCTAssertNil(service.id)
 		XCTAssertNotNil(service.name)
 		XCTAssertNotNil(service.cost)
 		
 		XCTAssertEqual(service.name, "name-test")
-		XCTAssertEqual(service.cost, 100)
+		XCTAssertEqual(service.cost, 100.5)
 	}
 	
 	func testFullParameterConstructor() {
-		let service = Service(id: 1, name: "name-test", cost: 100)
+		let service = Service(id: 1, name: "name-test", cost: 100.5)
 		XCTAssertNotNil(service.id)
 		XCTAssertNotNil(service.name)
 		XCTAssertNotNil(service.cost)
 		
 		XCTAssertEqual(service.id, 1)
 		XCTAssertEqual(service.name, "name-test")
-		XCTAssertEqual(service.cost, 100)
+		XCTAssertEqual(service.cost, 100.5)
 	}
 }

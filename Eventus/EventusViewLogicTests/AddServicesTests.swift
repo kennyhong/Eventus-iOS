@@ -22,7 +22,6 @@ class AddServicesTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText("testuser1")
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 		}
 		
 		app.navigationBars["Events"].buttons["plus"].tap()
@@ -31,10 +30,12 @@ class AddServicesTests: XCTestCase {
 		app.buttons["Next:"].tap()
 		app.textFields["Description"].typeText("test-description")
 		app.buttons["Next:"].tap()
-		app.pickerWheels["2017"].adjust(toPickerWheelValue: "2018")
+		app.pickerWheels.element(boundBy: 0).adjust(toPickerWheelValue: "January")
+		app.pickerWheels.element(boundBy: 1).adjust(toPickerWheelValue: "1")
+		app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "2018")
 		app.navigationBars["Add Event"].buttons["Save"].tap()
 		app.tables.staticTexts["test-title"].tap()
-		let servicesButton = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .button).element
+		let servicesButton = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .button).element
 		servicesButton.tap()
 		return wasLoggedIn
 	}

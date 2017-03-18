@@ -5,6 +5,7 @@ class EventListViewController: UIViewController {
 	fileprivate let tableView = UITableView()
 	fileprivate var rowData: [Event] = []
 	fileprivate let refreshControl = UIRefreshControl()
+	fileprivate let dateFormatter = DateFormatter()
 	
 	init() {
 		super.init(nibName: nil, bundle: nil)
@@ -47,7 +48,7 @@ class EventListViewController: UIViewController {
 	
 	private func queryList() {
 		if !isTesting {
-			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events")
+			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/")
 			let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
 				do {
 					if let data = data,
@@ -56,12 +57,22 @@ class EventListViewController: UIViewController {
 						
 						self.rowData = []
 						for event in events {
+							let services = event["services"] as! [[String : Any]]
+							var allServices: [Service] = []
+							for service in services {
+								let serviceObject = Service(
+									id: service["id"] as? Int,
+									name: service["name"] as? String,
+									cost: service["cost"] as? Double)
+								allServices.append(serviceObject)
+							}
 							self.rowData.append(Event(
 								id: event["id"] as? Int,
 								name: event["name"] as? String,
 								eventDescription: event["description"] as? String,
-								date: event["date"] as? String)
-							);
+								date: self.dateFormatter.englishDate(from: event["date"] as? String),
+								services: allServices)
+							)
 						}
 						DispatchQueue.main.async(){
 							self.tableView.reloadData()
@@ -75,34 +86,24 @@ class EventListViewController: UIViewController {
 		}
 	}
 	
-	func populateTestingRowData(withEvents events: [Event]) {
-		if isTesting {
-			rowData = []
-			for event in events {
-				rowData.append(event)
-			}
-			self.tableView.reloadData()
-		}
-	}
-	
 	@objc private func refresh() {
 		queryList()
 		refreshControl.endRefreshing()
 	}
 	
 	@objc private func addEventTouched() {
-		let addEventViewController = AddEventViewController()
-		addEventViewController.delegate = self
-		let addEventNavigationController = UINavigationController(rootViewController: addEventViewController)
-		addEventNavigationController.navigationBar.isTranslucent = false
-		present(addEventNavigationController, animated: true, completion: nil)
+		let createEventViewController = CreateEventViewController()
+		createEventViewController.delegate = self
+		let createEventNavigationController = UINavigationController(rootViewController: createEventViewController)
+		createEventNavigationController.navigationBar.isTranslucent = false
+		present(createEventNavigationController, animated: true, completion: nil)
 	}
 }
 
 extension EventListViewController: EventPreviewViewDelegate {
 	
-	func didTouchEventPreviewView(withEventId id: Int) {
-		let eventDetailsViewController = EventDetailsViewController(withEventId: id)
+	func didTouchEventPreviewView(withEvent event: Event) {
+		let eventDetailsViewController = EventDetailsViewController(withEvent: event)
 		eventDetailsViewController.delegate = self
 		navigationController?.pushViewController(eventDetailsViewController, animated: true)
 	}
@@ -110,15 +111,21 @@ extension EventListViewController: EventPreviewViewDelegate {
 
 extension EventListViewController: EventDetailsViewControllerDelegate {
 	
+	func didModifyEvent(event: Event) {
+		let index = rowData.index(of: rowData.filter() { ($0 as Event).id == event.id! }.first!)
+		rowData[index!] = event
+		tableView.reloadData()
+	}
+	
 	func didDeleteEvent(withId id: Int) {
 		rowData = rowData.filter() { ($0 as Event).id != id }
 		tableView.reloadData()
 	}
 }
 
-extension EventListViewController: AddEventViewControllerDelegate {
+extension EventListViewController: CreateEventViewControllerDelegate {
 	
-	func didAddEvent(event: Event) {
+	func didCreateEvent(event: Event) {
 		rowData.append(event)
 		tableView.reloadData()
 	}
@@ -150,10 +157,7 @@ extension EventListViewController: UITableViewDelegate {
 			eventPreviewView?.constrainToFillView(cell.contentView)
 		}
 		
-		eventPreviewView?.id = row.id
-		eventPreviewView?.name = row.name
-		eventPreviewView?.eventDescription = row.eventDescription
-		eventPreviewView?.date = row.date
+		eventPreviewView?.event	= row
 		return cell
 	}
 }

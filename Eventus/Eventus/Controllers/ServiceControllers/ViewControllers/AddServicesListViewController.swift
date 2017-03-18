@@ -1,7 +1,7 @@
 import UIKit
 
 protocol AddServicesListViewControllerDelegate {
-	func tableData(shouldUpdate: Bool)
+	func didAddService(_ service: Service)
 }
 
 class AddServicesListViewController: UIViewController {
@@ -52,7 +52,7 @@ class AddServicesListViewController: UIViewController {
 	
 	private func queryList() {
 		if isTesting {
-			rowData.append(Service(id: 124, name: "test-add-service", cost: 100))
+			rowData.append(Service(id: 124, name: "test-add-service", cost: 100.0))
 			tableView.reloadData()
 		} else {
 			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(eventId)/services")
@@ -97,11 +97,11 @@ class AddServicesListViewController: UIViewController {
 					
 					var allServices: [Service] = []
 					for service in services {
-						allServices.append(Service(
+						let serviceObject = Service(
 							id: service["id"] as? Int,
 							name: service["name"] as? String,
-							cost: service["cost"] as? Int)
-						);
+							cost: service["cost"] as? Double)
+						allServices.append(serviceObject)
 					}
 					completionHandler(allServices)
 				}
@@ -118,15 +118,14 @@ class AddServicesListViewController: UIViewController {
 	}
 	
 	@objc private func saveTouched() {
-		delegate?.tableData(shouldUpdate: true)
 		dismiss(animated: true, completion: nil)
 	}
 }
 
 extension AddServicesListViewController: ServicePreviewViewDelegate {
 	
-	func didTouchServicePreviewView(withServiceId id: Int) {
-		let serviceDetailsViewController = ServiceDetailsViewController(eventId: eventId, serviceId: id, isTiedToEvent: false)
+	func didTouchServicePreviewView(withService service: Service) {
+		let serviceDetailsViewController = ServiceDetailsViewController(eventId: eventId, service: service, isTiedToEvent: false)
 		serviceDetailsViewController.delegate = self
 		navigationController?.pushViewController(serviceDetailsViewController, animated: true)
 	}
@@ -138,9 +137,10 @@ extension AddServicesListViewController: ServiceDetailsViewControllerDelegate {
 		
 	}
 	
-	func didAddService(withId serviceId: Int) {
-		rowData = rowData.filter() { ($0 as Service).id != serviceId }
+	func didAddService(_ service: Service) {
+		rowData = rowData.filter() { ($0 as Service).id != service.id! }
 		tableView.reloadData()
+		delegate?.didAddService(service)
 	}
 }
 

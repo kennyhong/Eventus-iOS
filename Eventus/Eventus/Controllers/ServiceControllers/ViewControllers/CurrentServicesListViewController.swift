@@ -1,11 +1,17 @@
 import UIKit
 
+protocol CurrentServicesListViewControllerDelegate {
+	func didAddService(_ service: Service)
+	func didDeleteService(withId id: Int)
+}
+
 class CurrentServicesListViewController: UIViewController {
 	
 	fileprivate let eventId: Int
 	fileprivate let tableView = UITableView()
 	fileprivate var rowData: [Service] = []
 	fileprivate let refreshControl = UIRefreshControl()
+	var delegate: CurrentServicesListViewControllerDelegate?
 	
 	init(withEventId id: Int) {
 		eventId = id
@@ -32,7 +38,6 @@ class CurrentServicesListViewController: UIViewController {
 	
 	fileprivate func queryList() {
 		if isTesting {
-			rowData.append(Service(id: 123, name: "test-service", cost: 100))
 			tableView.reloadData()
 		} else {
 			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(eventId)/services")
@@ -47,7 +52,7 @@ class CurrentServicesListViewController: UIViewController {
 							self.rowData.append(Service(
 								id: service["id"] as? Int,
 								name: service["name"] as? String,
-								cost: service["cost"] as? Int)
+								cost: service["cost"] as? Double)
 							);
 						}
 						DispatchQueue.main.async(){
@@ -96,8 +101,8 @@ class CurrentServicesListViewController: UIViewController {
 
 extension CurrentServicesListViewController: ServicePreviewViewDelegate {
 	
-	func didTouchServicePreviewView(withServiceId id: Int) {
-		let serviceDetailsViewController = ServiceDetailsViewController(eventId: eventId, serviceId: id, isTiedToEvent: true)
+	func didTouchServicePreviewView(withService service: Service) {
+		let serviceDetailsViewController = ServiceDetailsViewController(eventId: eventId, service: service, isTiedToEvent: true)
 		serviceDetailsViewController.delegate = self
 		navigationController?.pushViewController(serviceDetailsViewController, animated: true)
 	}
@@ -107,46 +112,17 @@ extension CurrentServicesListViewController: ServiceDetailsViewControllerDelegat
 	
 	func didDeleteService(withId serviceId: Int) {
 		rowData = rowData.filter() { ($0 as Service).id != serviceId }
+		delegate?.didDeleteService(withId: serviceId)
 		tableView.reloadData()
-	}
-	
-	func didAddService(withId serviceId: Int) {
-		if !isTesting {
-			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/services/\(serviceId)")
-			let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-				do {
-					if let data = data,
-						let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
-						let service = json["data"] as? [String: Any] {
-						
-						self.rowData.append(Service(
-							id: service["id"] as? Int,
-							name: service["name"] as? String,
-							cost: service["cost"] as? Int)
-						);
-					}
-				} catch {
-					print("Error deserializing JSON: \(error)")
-				}
-			}
-			task.resume()
-		}
 	}
 }
 
 extension CurrentServicesListViewController: AddServicesListViewControllerDelegate {
 	
-	func tableData(shouldUpdate: Bool) {
-		if isTesting {
-			rowData.append(Service(
-				id: 124,
-				name: "test-add-service",
-				cost: 123)
-			);
-			tableView.reloadData()
-		} else if shouldUpdate {
-			queryList()
-		}
+	func didAddService(_ service: Service) {
+		rowData.append(service)
+		delegate?.didAddService(service)
+		tableView.reloadData()
 	}
 }
 

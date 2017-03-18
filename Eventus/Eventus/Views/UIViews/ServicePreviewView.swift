@@ -1,7 +1,7 @@
 import UIKit
 
 protocol ServicePreviewViewDelegate {
-	func didTouchServicePreviewView(withServiceId id: Int)
+	func didTouchServicePreviewView(withService service: Service)
 }
 
 class ServicePreviewView: UIView, UIGestureRecognizerDelegate {
@@ -28,7 +28,7 @@ class ServicePreviewView: UIView, UIGestureRecognizerDelegate {
 		}
 	}
 	
-	var cost: Int? {
+	var cost: Double? {
 		didSet {
 			costLabel.isHidden = cost == nil
 			guard let cost = cost else { return }
@@ -64,6 +64,7 @@ class ServicePreviewView: UIView, UIGestureRecognizerDelegate {
 	
 	@objc private func didTouchServicePreviewView() {
 		guard let id = id else { fatalError("event has no associated id") }
-		delegate?.didTouchServicePreviewView(withServiceId: id)
+		let service = Service(id: id, name: name, cost: cost)
+		delegate?.didTouchServicePreviewView(withService: service)
 	}
 }

@@ -1,7 +1,7 @@
 import XCTest
 
-class EventDetailsTests: XCTestCase {
-        
+class EditEventTests: XCTestCase {
+	
 	fileprivate let app = XCUIApplication()
 	
 	override func setUp() {
@@ -47,24 +47,43 @@ class EventDetailsTests: XCTestCase {
 		}
 	}
 	
-	func testEventDetailsLayout() {
+	func testEditButtonExists() {
 		let wasLoggedIn = setup()
-		XCTAssertTrue(app.navigationBars["Event Details"].staticTexts["Event Details"].exists)
-		XCTAssertTrue(app.staticTexts["test-title"].exists)
-		XCTAssertTrue(app.staticTexts["test-description"].exists)
-		XCTAssertTrue(app.staticTexts["Jan 1, 2018"].exists)
-		let servicesButton = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .button).element
-		servicesButton.tap()
-		app.navigationBars["Current Services"].buttons["Event Details"].tap()
+		XCTAssertNotNil(app.navigationBars["Event Details"].buttons["Edit"])
 		teardown(wasLoggedIn)
 	}
 	
-	func testDeleteEvent() {
+	func testEditName() {
 		let wasLoggedIn = setup()
-		app.buttons["Delete Event"].tap()
-		app.alerts["Delete Event"].buttons["Delete"].tap()
-		app.navigationBars["Events"].staticTexts["Events"].tap()
-		XCTAssertFalse(app.staticTexts["test-title"].exists)
+		app.navigationBars["Event Details"].buttons["Edit"].tap()
+		app.textFields["Name"].tap()
+		app.textFields["Name"].typeText("-edit")
+		app.navigationBars["Add Event"].buttons["Save"].tap()
+		XCTAssertNotNil(app.tables.staticTexts["test-title-edit"])
+		XCTAssertNotNil(app.navigationBars["Event Details"].buttons["Events"])
+		teardown(wasLoggedIn)
+	}
+	
+	func testEditDescription() {
+		let wasLoggedIn = setup()
+		app.navigationBars["Event Details"].buttons["Edit"].tap()
+		app.textFields["Description"].tap()
+		app.textFields["Description"].typeText("-edit")
+		app.navigationBars["Add Event"].buttons["Save"].tap()
+		XCTAssertNotNil(app.tables.staticTexts["test-description-edit"])
+		XCTAssertNotNil(app.navigationBars["Event Details"].buttons["Events"])
+		teardown(wasLoggedIn)
+	}
+	
+	func testEditDate() {
+		let wasLoggedIn = setup()
+		app.navigationBars["Event Details"].buttons["Edit"].tap()
+		app.textFields["Description"].tap()
+		app.buttons["Next:"].tap()
+		app.pickerWheels.element(boundBy: 2).adjust(toPickerWheelValue: "2019")
+		app.navigationBars["Add Event"].buttons["Save"].tap()
+		XCTAssertNotNil(app.tables.staticTexts["Jan 1, 2019"])
+		XCTAssertNotNil(app.navigationBars["Event Details"].buttons["Events"])
 		teardown(wasLoggedIn)
 	}
 }

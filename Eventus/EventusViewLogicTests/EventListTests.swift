@@ -22,7 +22,6 @@ class EventListTests: XCTestCase {
 			app.textFields["Username"].tap()
 			app.typeText("testuser1")
 			app.buttons[">"].tap()
-			app.navigationBars["Events"].staticTexts["Events"].tap()
 		}
 		return wasLoggedIn
 	}

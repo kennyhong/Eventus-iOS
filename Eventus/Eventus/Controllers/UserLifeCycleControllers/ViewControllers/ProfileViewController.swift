@@ -6,6 +6,7 @@ protocol ProfileViewControllerDelegate {
 
 class ProfileViewController: UIViewController {
 	
+	fileprivate let scanEventButton = ButtonWithImageView()
 	fileprivate let logoutButton = Button(withMargins: UIEdgeInsets(horizontal: .large, vertical: .medium + .small))
 	var delegate: ProfileViewControllerDelegate?
 	
@@ -21,7 +22,20 @@ class ProfileViewController: UIViewController {
 	private func setup() {
 		title = User.shared.username!
 		
+		setupScanEventButton()
 		setupLogoutButton()
+	}
+	
+	private func setupScanEventButton() {
+		scanEventButton.text = "Scan QR Code Event"
+		scanEventButton.image = #imageLiteral(resourceName: "right-chevron")
+		scanEventButton.backgroundColor = .white
+		scanEventButton.addTopSeparator()
+		scanEventButton.addBottomSeparator()
+		scanEventButton.delegate = self
+		view.addSubviewForAutolayout(scanEventButton)
+		scanEventButton.constrainToFillViewHorizontally(view)
+		scanEventButton.pinInsideTopOf(view: view, constant: .extraLarge)
 	}
 	
 	private func setupLogoutButton() {
@@ -32,8 +46,8 @@ class ProfileViewController: UIViewController {
 		logoutButton.addTopSeparator()
 		logoutButton.addBottomSeparator()
 		view.addSubviewForAutolayout(logoutButton)
-		logoutButton.constrainToBeCenteredInView(view)
 		logoutButton.constrainToFillViewHorizontally(view)
+		logoutButton.pinInsideBottomOf(view: view, constant: .extraLarge)
 	}
 	
 	@objc private func didTapLogout() {
@@ -44,5 +58,19 @@ class ProfileViewController: UIViewController {
 		}))
 		alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
 		present(alertController, animated: true, completion: nil)
+	}
+}
+
+extension ProfileViewController: ButtonWithImageViewDelegate {
+	
+	func didTapButton(sender: ButtonWithImageView) {
+		let viewController: UIViewController
+		switch sender {
+		case scanEventButton:
+			viewController = QrScannerViewController()
+		default:
+			fatalError("unknown sender")
+		}
+		navigationController?.pushViewController(viewController, animated: true)
 	}
 }

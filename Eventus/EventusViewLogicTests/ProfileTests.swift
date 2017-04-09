@@ -35,16 +35,24 @@ class ProfileTests: XCTestCase {
 		}
 	}
 	
-    func testLogoutButtonExists() {
+	func testServiceFilteringButtonExists() {
 		let wasLoggedIn = setup()
-		XCTAssertNotNil(app.buttons["Logout"])
+		app.tabBars.children(matching: .button).element(boundBy: 1).tap()
+		let button = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .button).element
+		XCTAssertNotNil(button)
 		teardown(wasLoggedIn)
-    }
+	}
 	
 	func testQrCodeButtonExists() {
 		let wasLoggedIn = setup()
-		let button = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .button).element
+		let button = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .button).element
 		XCTAssertNotNil(button)
+		teardown(wasLoggedIn)
+	}
+	
+	func testLogoutButtonExists() {
+		let wasLoggedIn = setup()
+		XCTAssertNotNil(app.buttons["Logout"])
 		teardown(wasLoggedIn)
 	}
 }

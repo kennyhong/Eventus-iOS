@@ -51,11 +51,12 @@ class AddServicesTests: XCTestCase {
 	func testAddService() {
 		let wasLoggedIn = setup()
 		app.navigationBars["Current Services"].buttons["plus"].tap()
-		app.tables.staticTexts["test-add-service"].tap()
+		XCTAssertEqual(app.tables.cells.count,3)
+		app.tables.staticTexts["test-add-service2"].tap()
 		app.buttons["Add Service"].tap()
-		XCTAssertFalse(app.staticTexts["test-add-service"].exists)
+		XCTAssertEqual(app.tables.cells.count,2)
 		app.navigationBars["Add Services"].buttons["Done"].tap()
-		XCTAssertTrue(app.staticTexts["test-add-service"].exists)
+		XCTAssertTrue(app.staticTexts["test-add-service2"].exists)
 		teardown(wasLoggedIn)
 	}
 }

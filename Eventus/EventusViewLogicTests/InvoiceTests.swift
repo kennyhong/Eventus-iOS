@@ -84,9 +84,11 @@ class InvoiceTests: XCTestCase {
 		let servicesButton = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 0).children(matching: .button).element
 		servicesButton.tap()
 		app.navigationBars["Current Services"].buttons["plus"].tap()
+		
+		XCTAssertEqual(app.tables.cells.count,3)
 		app.tables.staticTexts["test-add-service"].tap()
 		app.buttons["Add Service"].tap()
-		XCTAssertFalse(app.staticTexts["test-add-service"].exists)
+		XCTAssertEqual(app.tables.cells.count,2)
 		app.navigationBars["Add Services"].buttons["Done"].tap()
 		XCTAssertTrue(app.staticTexts["test-add-service"].exists)
 		app.navigationBars["Current Services"].buttons["Event Details"].tap()

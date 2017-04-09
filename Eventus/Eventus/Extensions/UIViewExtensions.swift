@@ -102,24 +102,24 @@ public extension UIView {
 		])
 	}
 	
-	func addTopSeparator(inside: Bool = true) {
+	func addTopSeparator(inside: Bool = true, constant: CGFloat = 0) {
 		let separator = HorizontalSeparator()
 		addSubviewForAutolayout(separator)
 		if inside {
-			separator.pinInsideTopOf(view: self)
+			separator.pinInsideTopOf(view: self, constant: constant)
 		} else {
-			separator.pinOnTopOfView(view: self)
+			separator.pinOnTopOfView(view: self, constant: constant)
 		}
 		separator.constrainToFillViewHorizontally(self)
 	}
 	
-	func addBottomSeparator(inside: Bool = true) {
+	func addBottomSeparator(inside: Bool = true, constant: CGFloat = 0) {
 		let separator = HorizontalSeparator()
 		addSubviewForAutolayout(separator)
 		if inside {
-			separator.pinInsideBottomOf(view: self)
+			separator.pinInsideBottomOf(view: self, constant: constant)
 		} else {
-			separator.pinToBottomOfView(view: self)
+			separator.pinToBottomOfView(view: self, constant: constant)
 		}
 		separator.constrainToFillViewHorizontally(self)
 	}

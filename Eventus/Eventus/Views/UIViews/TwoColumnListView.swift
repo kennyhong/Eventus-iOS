@@ -25,7 +25,7 @@ class TwoColumnListView: UIView {
 	}
 	
 	func addRowWith(leftColumnString: String, rightColumnString: String, withAttributes attributes: [String : Any]? = nil) {
-		let rowStackView = UIStackView(distribution: .fillEqually)
+		let rowStackView = UIStackView(distribution: .fillProportionally)
 		
 		let leftLabel = UILabel()
 		leftLabel.text = leftColumnString

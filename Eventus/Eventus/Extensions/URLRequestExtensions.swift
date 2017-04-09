@@ -15,13 +15,13 @@ extension UIViewController {
 		}
 		let task = URLSession.shared.dataTask(with: request) { data, response, error in
 			guard let data = data, error == nil else {
-				print("error=\(error)")
+				print("error=\(String(describing: error))")
 				return
 			}
 			
 			if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
 				print("Status code should be 200, but is \(httpStatus.statusCode)")
-				print("response = \(response)")
+				print("response = \(String(describing: response))")
 			}
 			
 			let responseString = String(data: data, encoding: .utf8)

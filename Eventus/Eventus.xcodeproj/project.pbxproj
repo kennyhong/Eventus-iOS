@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		740AF6D31E981C430078E8E5 /* ServiceFilteringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740AF6D21E981C430078E8E5 /* ServiceFilteringTests.swift */; };
 		74240FF91E706ED100DA67A4 /* AddEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74240FF81E706ED100DA67A4 /* AddEventTests.swift */; };
+		742F6EB71E9722D900A5B1BD /* ServiceFilteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742F6EB61E9722D900A5B1BD /* ServiceFilteringViewController.swift */; };
 		743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */; };
 		743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77821E5C42B600F8FE2E /* EventListTests.swift */; };
 		743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743C77841E5C43CB00F8FE2E /* ProfileTests.swift */; };
@@ -105,7 +107,16 @@
 		749AB98B1E74764800922892 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C701E73248500930DA7 /* Assets.xcassets */; };
 		749AB98D1E74764800922892 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C721E73248500930DA7 /* Info.plist */; };
 		749AB98E1E74764800922892 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D42C731E73248500930DA7 /* LaunchScreen.storyboard */; };
+		749E70D91E980B9200194B4E /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E70D81E980B9200194B4E /* TagTests.swift */; };
+		749E70DA1E980BF500194B4E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6711F1E973A1200257D8C /* Tag.swift */; };
+		749E70DB1E980BF500194B4E /* ServiceFilteringSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A671211E97489200257D8C /* ServiceFilteringSettings.swift */; };
+		749E70DC1E980BF500194B4E /* ServiceFilteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742F6EB61E9722D900A5B1BD /* ServiceFilteringViewController.swift */; };
+		749E70DD1E980BFF00194B4E /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6711F1E973A1200257D8C /* Tag.swift */; };
+		749E70DE1E980BFF00194B4E /* ServiceFilteringSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A671211E97489200257D8C /* ServiceFilteringSettings.swift */; };
+		749E70DF1E980BFF00194B4E /* ServiceFilteringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742F6EB61E9722D900A5B1BD /* ServiceFilteringViewController.swift */; };
 		74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */; };
+		74A671201E973A1200257D8C /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A6711F1E973A1200257D8C /* Tag.swift */; };
+		74A671221E97489200257D8C /* ServiceFilteringSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A671211E97489200257D8C /* ServiceFilteringSettings.swift */; };
 		74BAD5951E7C3CF800EF2A0F /* TwoColumnListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D8E5261E79B9CB0066C5C0 /* TwoColumnListView.swift */; };
 		74BAD5961E7C3CF800EF2A0F /* ShareToFacebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74471E7B279C005AC19D /* ShareToFacebookView.swift */; };
 		74BAD5971E7C3CF800EF2A0F /* PoweredByEventusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB74491E7B31D9005AC19D /* PoweredByEventusView.swift */; };
@@ -177,7 +188,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		740AF6D21E981C430078E8E5 /* ServiceFilteringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFilteringTests.swift; sourceTree = "<group>"; };
 		74240FF81E706ED100DA67A4 /* AddEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventTests.swift; sourceTree = "<group>"; };
+		742F6EB61E9722D900A5B1BD /* ServiceFilteringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFilteringViewController.swift; sourceTree = "<group>"; };
 		743BD0791E3BC9BA009CAEAF /* Eventus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Eventus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743C77781E5A1EFE00F8FE2E /* LogoutTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutTests.swift; sourceTree = "<group>"; };
 		743C77821E5C42B600F8FE2E /* EventListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventListTests.swift; sourceTree = "<group>"; };
@@ -205,7 +218,10 @@
 		749AB9321E73782200922892 /* TextFieldWithButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithButtonView.swift; sourceTree = "<group>"; };
 		749AB9331E73782200922892 /* TextFieldWithImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldWithImageView.swift; sourceTree = "<group>"; };
 		749AB9341E73782200922892 /* VerticalSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSeparator.swift; sourceTree = "<group>"; };
+		749E70D81E980B9200194B4E /* TagTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
 		74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTests.swift; sourceTree = "<group>"; };
+		74A6711F1E973A1200257D8C /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		74A671211E97489200257D8C /* ServiceFilteringSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceFilteringSettings.swift; sourceTree = "<group>"; };
 		74BAD5A91E7C5E1100EF2A0F /* EditEventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditEventTests.swift; sourceTree = "<group>"; };
 		74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteServicesTests.swift; sourceTree = "<group>"; };
 		74D42C521E7323EE00930DA7 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
@@ -306,6 +322,7 @@
 				74CEFD8C1E709A0B008D1F6C /* DeleteServicesTests.swift */,
 				7457CC271E708ABE003B2414 /* AddServicesTests.swift */,
 				7457CC251E708AB3003B2414 /* CurrentServicesTests.swift */,
+				740AF6D21E981C430078E8E5 /* ServiceFilteringTests.swift */,
 			);
 			name = ServiceTests;
 			sourceTree = "<group>";
@@ -363,6 +380,7 @@
 		749A7AFA1E57636800548133 /* EventusUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				749E70D81E980B9200194B4E /* TagTests.swift */,
 				749A7B0A1E576CC000548133 /* UserTests.swift */,
 				74A2BA841E6FD2F4002905D4 /* ServiceTests.swift */,
 				749A7B031E5763F200548133 /* EventTests.swift */,
@@ -429,6 +447,8 @@
 				74D42C521E7323EE00930DA7 /* Event.swift */,
 				74D42C531E7323EE00930DA7 /* Service.swift */,
 				74D42C541E7323EE00930DA7 /* User.swift */,
+				74A6711F1E973A1200257D8C /* Tag.swift */,
+				74A671211E97489200257D8C /* ServiceFilteringSettings.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -517,6 +537,7 @@
 				74D42C931E73256400930DA7 /* AddServicesListViewController.swift */,
 				74D42C941E73256400930DA7 /* CurrentServicesListViewController.swift */,
 				74D42C951E73256400930DA7 /* ServiceDetailsViewController.swift */,
+				742F6EB61E9722D900A5B1BD /* ServiceFilteringViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -744,8 +765,10 @@
 				74D42C871E7324A600930DA7 /* UIViewExtensions.swift in Sources */,
 				74D42CA11E73256400930DA7 /* EventDetailsViewController.swift in Sources */,
 				74EB74461E7B2554005AC19D /* UIImageExtensions.swift in Sources */,
+				742F6EB71E9722D900A5B1BD /* ServiceFilteringViewController.swift in Sources */,
 				74EB74441E7B14E6005AC19D /* ShareEventOnFacebookViewController.swift in Sources */,
 				74D42CA61E73256400930DA7 /* MainTabBarController.swift in Sources */,
+				74A671201E973A1200257D8C /* Tag.swift in Sources */,
 				74D42C811E7324A600930DA7 /* CGFloatExtensions.swift in Sources */,
 				74D42CA81E73256400930DA7 /* LoginViewController.swift in Sources */,
 				74D8E5271E79B9CB0066C5C0 /* TwoColumnListView.swift in Sources */,
@@ -756,6 +779,7 @@
 				749AB93A1E73782200922892 /* ServicePreviewView.swift in Sources */,
 				7480FA7F1E7B6664003B771A /* DateFormatterExtensions.swift in Sources */,
 				74D42C571E7323EE00930DA7 /* User.swift in Sources */,
+				74A671221E97489200257D8C /* ServiceFilteringSettings.swift in Sources */,
 				74D42CAA1E73256400930DA7 /* SplashViewController.swift in Sources */,
 				749AB9381E73782200922892 /* EventPreviewView.swift in Sources */,
 				74D42CA21E73256400930DA7 /* EventListViewController.swift in Sources */,
@@ -768,6 +792,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749E70DD1E980BFF00194B4E /* Tag.swift in Sources */,
+				749E70DE1E980BFF00194B4E /* ServiceFilteringSettings.swift in Sources */,
+				749E70DF1E980BFF00194B4E /* ServiceFilteringViewController.swift in Sources */,
 				748349BA1E7CEAF60036C951 /* QrScannerViewController.swift in Sources */,
 				74BAD59E1E7C3D0A00EF2A0F /* TwoColumnListView.swift in Sources */,
 				74BAD59F1E7C3D0A00EF2A0F /* ShareToFacebookView.swift in Sources */,
@@ -816,6 +843,7 @@
 				7457CC281E708ABE003B2414 /* AddServicesTests.swift in Sources */,
 				743C77791E5A1EFE00F8FE2E /* LogoutTests.swift in Sources */,
 				743C77851E5C43CB00F8FE2E /* ProfileTests.swift in Sources */,
+				740AF6D31E981C430078E8E5 /* ServiceFilteringTests.swift in Sources */,
 				74240FF91E706ED100DA67A4 /* AddEventTests.swift in Sources */,
 				743C77831E5C42B600F8FE2E /* EventListTests.swift in Sources */,
 				74CEFD8D1E709A0B008D1F6C /* DeleteServicesTests.swift in Sources */,
@@ -830,6 +858,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749E70DA1E980BF500194B4E /* Tag.swift in Sources */,
+				749E70DB1E980BF500194B4E /* ServiceFilteringSettings.swift in Sources */,
+				749E70DC1E980BF500194B4E /* ServiceFilteringViewController.swift in Sources */,
 				748349B91E7CEAF10036C951 /* QrScannerViewController.swift in Sources */,
 				74BAD5951E7C3CF800EF2A0F /* TwoColumnListView.swift in Sources */,
 				74BAD5961E7C3CF800EF2A0F /* ShareToFacebookView.swift in Sources */,
@@ -875,6 +906,7 @@
 				749A7B0B1E576CC000548133 /* UserTests.swift in Sources */,
 				749A7B041E5763F200548133 /* EventTests.swift in Sources */,
 				74A2BA851E6FD2F5002905D4 /* ServiceTests.swift in Sources */,
+				749E70D91E980B9200194B4E /* TagTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

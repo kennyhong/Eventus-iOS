@@ -7,13 +7,30 @@ protocol AddServicesListViewControllerDelegate {
 class AddServicesListViewController: UIViewController {
 	
 	fileprivate let eventId: Int
+	fileprivate let addedIdsString: String
 	fileprivate let tableView = UITableView()
 	fileprivate var rowData: [Service] = []
 	fileprivate let refreshControl = UIRefreshControl()
 	var delegate: AddServicesListViewControllerDelegate?
 	
-	init(withEventId id: Int) {
+	private var urlString: String {
+		get {
+			if addedIdsString.isEmpty && ServiceFilteringSettings.shared.tagFilterString.isEmpty {
+				return "http://eventus.us-west-2.elasticbeanstalk.com/api/services?\(ServiceFilteringSettings.shared.orderByString)"
+			} else if addedIdsString.isEmpty && !ServiceFilteringSettings.shared.tagFilterString.isEmpty {
+				return "http://eventus.us-west-2.elasticbeanstalk.com/api/services?\(ServiceFilteringSettings.shared.orderByString)&\(ServiceFilteringSettings.shared.tagFilterString)"
+			} else if !addedIdsString.isEmpty && ServiceFilteringSettings.shared.tagFilterString.isEmpty {
+				return "http://eventus.us-west-2.elasticbeanstalk.com/api/services?\(ServiceFilteringSettings.shared.orderByString)&\(addedIdsString)"
+			} else if !addedIdsString.isEmpty && !ServiceFilteringSettings.shared.tagFilterString.isEmpty {
+				return "http://eventus.us-west-2.elasticbeanstalk.com/api/services?\(ServiceFilteringSettings.shared.orderByString)&\(addedIdsString)&\(ServiceFilteringSettings.shared.tagFilterString)"
+			}
+			fatalError("Error: unknown state")
+		}
+	}
+	
+	init(withEventId id: Int, addedIdsString: String) {
 		eventId = id
+		self.addedIdsString = addedIdsString
 		super.init(nibName: nil, bundle: nil)
 		setup()
 	}
@@ -52,31 +69,53 @@ class AddServicesListViewController: UIViewController {
 	
 	private func queryList() {
 		if isTesting {
-			rowData.append(Service(id: 124, name: "test-add-service", cost: 100.0))
+			let oldRowData = rowData
+			let s1 = Service(id: 1, name: "test-add-service", cost: 100.0)
+			let s2 = Service(id: 2, name: "test-add-service2", cost: 50.0)
+			let s3 = Service(id: 3, name: "test-add-service3", cost: 150.0)
+			switch ServiceFilteringSettings.shared.sortState {
+				case .nameAscending:
+					rowData = [s1, s2, s3]
+				case .nameDescending:
+					rowData = [s3, s2, s1]
+				case .costAscending:
+					rowData = [s2, s1, s3]
+				case .costDescending:
+					rowData = [s3, s1, s2]
+			}
+			if ServiceFilteringSettings.shared.selectedTags.count > 0 {
+				var validServices: [Service] = []
+				for tagID in ServiceFilteringSettings.shared.selectedTags {
+					validServices.append(contentsOf: rowData.filter() { ($0 as Service).id! == tagID.id! })
+				}
+				rowData = validServices
+			}
+			if oldRowData.count > 0 {
+				for element in rowData {
+					if !oldRowData.contains(element) {
+						rowData = rowData.filter() { $0 != element }
+					}
+				}
+			}
 			tableView.reloadData()
 		} else {
-			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(eventId)/services")
+			let url = URL(string: urlString)
 			let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
 				do {
 					if let data = data,
 						let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
 						let services = json["data"] as? [[String: Any]] {
 						
-						// TODO: remove this client side data manipulation when proper endpoint exists
-						self.queryAllServices() { allServices in
-							var allServicesCopy = allServices
-							var currentlyAddedServiceIds: [Int] = []
-							for service in services {
-								currentlyAddedServiceIds.append(service["id"] as! Int)
-							}
-							for id in currentlyAddedServiceIds {
-								allServicesCopy = allServicesCopy.filter() { ($0 as Service).id != id }
-							}
-							
-							DispatchQueue.main.async(){
-								self.rowData = allServicesCopy
-								self.tableView.reloadData()
-							}
+						self.rowData = []
+						for service in services {
+							self.rowData.append(Service(
+								id: service["id"] as? Int,
+								name: service["name"] as? String,
+								cost: service["cost"] as? Double)
+							)
+						}
+						DispatchQueue.main.async(){
+							self.tableView.reloadData()
 						}
 					}
 				} catch {
@@ -85,31 +124,6 @@ class AddServicesListViewController: UIViewController {
 			}
 			task.resume()
 		}
-	}
-	
-	private func queryAllServices(completionHandler: @escaping ([Service]) -> ()) {
-		let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/services")
-		let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-			do {
-				if let data = data,
-					let json = try JSONSerialization.jsonObject(with: data) as? [String: Any],
-					let services = json["data"] as? [[String: Any]] {
-					
-					var allServices: [Service] = []
-					for service in services {
-						let serviceObject = Service(
-							id: service["id"] as? Int,
-							name: service["name"] as? String,
-							cost: service["cost"] as? Double)
-						allServices.append(serviceObject)
-					}
-					completionHandler(allServices)
-				}
-			} catch {
-				print("Error deserializing JSON: \(error)")
-			}
-		}
-		task.resume()
 	}
 	
 	@objc private func refresh() {

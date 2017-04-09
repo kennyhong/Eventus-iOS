@@ -62,8 +62,7 @@ class ShareOnFacebookTests: XCTestCase {
 		XCTAssertTrue(app.navigationBars["Share Event on Facebook"].staticTexts["Share Event on Facebook"].exists)
 		XCTAssertTrue(app.staticTexts["Sharing on Facebook will post the below image, allowing Eventus users to scan the QR code to add your event to their iOS calendar"].exists)
 		XCTAssertTrue(element.children(matching: .other).element.children(matching: .image).element.exists)
-		app.buttons["Share on Facebook"].tap()
-		app.navigationBars["Facebook"].buttons["Cancel"].tap()
+		XCTAssertTrue(app.buttons["Share on Facebook"].exists)
 		teardown(wasLoggedIn)
 	}
 }

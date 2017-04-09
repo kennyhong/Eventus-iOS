@@ -33,6 +33,10 @@ class CurrentServicesListViewController: UIViewController {
 		navigationItem.rightBarButtonItem = UIBarButtonItem(customView: addServiceButton)
 		
 		setupTableView()
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
 		queryList()
 	}
 	
@@ -40,7 +44,7 @@ class CurrentServicesListViewController: UIViewController {
 		if isTesting {
 			tableView.reloadData()
 		} else {
-			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(eventId)/services")
+			let url = URL(string: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(eventId)/services?\(ServiceFilteringSettings.shared.orderByString)")
 			let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
 				do {
 					if let data = data,
@@ -53,7 +57,7 @@ class CurrentServicesListViewController: UIViewController {
 								id: service["id"] as? Int,
 								name: service["name"] as? String,
 								cost: service["cost"] as? Double)
-							);
+							)
 						}
 						DispatchQueue.main.async(){
 							self.tableView.reloadData()
@@ -91,11 +95,26 @@ class CurrentServicesListViewController: UIViewController {
 	}
 	
 	@objc private func addServiceTouched() {
-		let addServiceListViewController = AddServicesListViewController(withEventId: eventId)
+		let addServiceListViewController = AddServicesListViewController(withEventId: eventId, addedIdsString: idsString)
 		addServiceListViewController.delegate = self
 		let addServicesNavigationController = UINavigationController(rootViewController: addServiceListViewController)
 		addServicesNavigationController.navigationBar.isTranslucent = false
 		present(addServicesNavigationController, animated: true, completion: nil)
+	}
+	
+	private var idsString: String {
+		var query = ""
+		for service in rowData {
+			if query.isEmpty {
+				query = "\(service.id!)"
+			} else {
+				query = "\(query),\(service.id!)"
+			}
+		}
+		if !query.isEmpty {
+			query = "filter-except-ids=\(query)"
+		}
+		return query
 	}
 }
 

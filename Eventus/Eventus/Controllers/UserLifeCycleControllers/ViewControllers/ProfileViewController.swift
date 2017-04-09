@@ -7,6 +7,7 @@ protocol ProfileViewControllerDelegate {
 class ProfileViewController: UIViewController {
 	
 	fileprivate let scanEventButton = ButtonWithImageView()
+	fileprivate let serviceFilteringButton = ButtonWithImageView()
 	fileprivate let logoutButton = Button(withMargins: UIEdgeInsets(horizontal: .large, vertical: .medium + .small))
 	var delegate: ProfileViewControllerDelegate?
 	
@@ -22,20 +23,32 @@ class ProfileViewController: UIViewController {
 	private func setup() {
 		title = User.shared.username!
 		
+		setupServiceFilteringButton()
 		setupScanEventButton()
 		setupLogoutButton()
+	}
+	
+	private func setupServiceFilteringButton() {
+		serviceFilteringButton.text = "Service Filtering"
+		serviceFilteringButton.image = #imageLiteral(resourceName: "right-chevron")
+		serviceFilteringButton.backgroundColor = .white
+		serviceFilteringButton.addTopSeparator()
+		serviceFilteringButton.addBottomSeparator()
+		serviceFilteringButton.delegate = self
+		view.addSubviewForAutolayout(serviceFilteringButton)
+		serviceFilteringButton.constrainToFillViewHorizontally(view)
+		serviceFilteringButton.pinInsideTopOf(view: view)
 	}
 	
 	private func setupScanEventButton() {
 		scanEventButton.text = "Scan QR Code Event"
 		scanEventButton.image = #imageLiteral(resourceName: "right-chevron")
 		scanEventButton.backgroundColor = .white
-		scanEventButton.addTopSeparator()
 		scanEventButton.addBottomSeparator()
 		scanEventButton.delegate = self
 		view.addSubviewForAutolayout(scanEventButton)
 		scanEventButton.constrainToFillViewHorizontally(view)
-		scanEventButton.pinInsideTopOf(view: view, constant: .extraLarge)
+		scanEventButton.pinToBottomOfView(view: serviceFilteringButton)
 	}
 	
 	private func setupLogoutButton() {
@@ -66,6 +79,8 @@ extension ProfileViewController: ButtonWithImageViewDelegate {
 	func didTapButton(sender: ButtonWithImageView) {
 		let viewController: UIViewController
 		switch sender {
+		case serviceFilteringButton:
+			viewController = ServiceFilteringViewController()
 		case scanEventButton:
 			viewController = QrScannerViewController()
 		default:

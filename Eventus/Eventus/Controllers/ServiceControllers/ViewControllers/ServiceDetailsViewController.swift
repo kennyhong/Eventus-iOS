@@ -61,7 +61,7 @@ class ServiceDetailsViewController: UIViewController {
 		if !isTesting {
 			request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.service.id!)", requestType: "POST") { response in
 				
-				print("response = \(response)")
+				print("response = \(String(describing: response))")
 			}
 		}
 		self.delegate?.didAddService(service)
@@ -74,7 +74,7 @@ class ServiceDetailsViewController: UIViewController {
 			if !isTesting {
 				self.request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.service.id!)", requestType: "DELETE") { response in
 					
-					print("response = \(response)")
+					print("response = \(String(describing: response))")
 				}
 			}
 			self.dismiss(animated: true, completion: nil)

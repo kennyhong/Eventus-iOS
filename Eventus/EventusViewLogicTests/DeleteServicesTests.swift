@@ -55,7 +55,7 @@ class DeleteServicesTests: XCTestCase {
 		app.buttons["Add Service"].tap()
 		app.navigationBars["Add Services"].buttons["Done"].tap()
 		
-		app.tables.staticTexts["test-add-service"].tap()
+		app.tables.cells.element(boundBy: 0).tap()
 		XCTAssertTrue(app.navigationBars["Service Details"].staticTexts["Service Details"].exists)
 		app.buttons["Delete Service"].tap()
 		app.alerts["Remove Service"].buttons["Remove"].tap()

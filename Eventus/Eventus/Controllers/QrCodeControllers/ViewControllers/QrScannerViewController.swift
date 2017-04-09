@@ -77,7 +77,7 @@ class QrScannerViewController: UIViewController {
 				if success {
 					self.addEvent(store: eventStore, response: response)
 				} else {
-					let alertMessage = "\(error?.localizedDescription)"
+					let alertMessage = "\(String(describing: error?.localizedDescription))"
 					let alertController = UIAlertController(title: "Permission Denied", message: alertMessage, preferredStyle: .alert)
 					alertController.addAction(UIAlertAction(title: "Dismiss", style: .destructive, handler: { (alert: UIAlertAction) -> Void in
 						
@@ -97,7 +97,6 @@ class QrScannerViewController: UIViewController {
 		event.title = response[0]
 		event.notes = response[1]
 		event.startDate = parsedDate(fromString: response[2])
-		// TODO: add proper end date if time permits from server
 		event.endDate = parsedDate(fromString: response[2], endHourOffset: 2)
 		
 		do {

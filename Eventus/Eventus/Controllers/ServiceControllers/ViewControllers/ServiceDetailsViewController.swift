@@ -62,10 +62,15 @@ class ServiceDetailsViewController: UIViewController {
 			request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.service.id!)", requestType: "POST") { response in
 				
 				print("response = \(String(describing: response))")
+				DispatchQueue.main.async(){
+					self.delegate?.didAddService(self.service)
+					_ = self.navigationController?.popViewController(animated: true)
+				}
 			}
+		} else {
+			self.delegate?.didAddService(service)
+			_ = self.navigationController?.popViewController(animated: true)
 		}
-		self.delegate?.didAddService(service)
-		_ = self.navigationController?.popViewController(animated: true)
 	}
 	
 	@objc private func didTapDeleteService() {
@@ -75,11 +80,19 @@ class ServiceDetailsViewController: UIViewController {
 				self.request(withString: "http://eventus.us-west-2.elasticbeanstalk.com/api/events/\(self.eventId)/services/\(self.service.id!)", requestType: "DELETE") { response in
 					
 					print("response = \(String(describing: response))")
+					DispatchQueue.main.async(){
+						self.delegate?.didAddService(self.service)
+						self.dismiss(animated: true, completion: nil)
+						self.delegate?.didDeleteService(withId: self.service.id!)
+						_ = self.navigationController?.popViewController(animated: true)
+					}
 				}
+			} else {
+				self.delegate?.didAddService(self.service)
+				self.dismiss(animated: true, completion: nil)
+				self.delegate?.didDeleteService(withId: self.service.id!)
+				_ = self.navigationController?.popViewController(animated: true)
 			}
-			self.dismiss(animated: true, completion: nil)
-			self.delegate?.didDeleteService(withId: self.service.id!)
-			_ = self.navigationController?.popViewController(animated: true)
 		}))
 		alertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
 		present(alertController, animated: true, completion: nil)
